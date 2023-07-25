@@ -1,0 +1,51 @@
+.heroContainer {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+}
+
+.mainTitle {
+    display: flex;
+    max-width: 500px;
+    line-height: 53px;
+}
+
+.hero {
+    text-align: left;
+    padding-left: 5rem;
+    
+}
+
+.hero h1 {
+    color: var(--clr-primary);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.hero h2 {
+    color: var(--clr-text-dark);
+    font-weight: 800;
+    font-size: 1.2rem;
+    max-width: 250px;
+}
+
+.hero h3 {
+    color: var(--clr-text-dark);
+    font-weight: 500;
+    font-size: 1.5rem;
+    max-width: 650px;
+}
+
+
+.boxHolder {
+    display: flex;
+    justify-content: left;
+}
+
+.btn_holder {
+    padding: 0 0 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 27rem;
+}

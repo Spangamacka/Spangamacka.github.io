@@ -1,0 +1,35 @@
+.container {
+    background-color: var(--clr-background-blue);
+    border: 1px solid #CFDFFB;
+    display: flex;
+    justify-content: space-around;
+    width: 19.5rem;
+    height: 6.75rem;
+}
+
+
+.jourinfo {
+    border-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lasjourLogo {
+    border-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: var(--clr-primary);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.number {
+    color: var(--clr-primary);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
