@@ -36,14 +36,13 @@ function Navbar() {
                </div>
             </div>
             <div className={classes.navigation_attention}>
-                
                 <div>
                     <ActionButtonSolidSmall text="Rådfråga Oss" />
                 </div>
             </div>
-            
-          
         </div>
+
+        
     )
 }
 

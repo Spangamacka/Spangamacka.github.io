@@ -1,10 +1,22 @@
-@media (min-width: 869px) {
+@media (max-width: 988px) {
+
     .navbar_container {
-        display: none;
+        visibility: hidden;
+    }
+  
+
+    .mobile_navigation {
+        border: 1px solid red;
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-width: 1179px;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-right: auto;
+        position: static;
     }
   }
-
-
 
 .navbar_container {
     display: flex;
