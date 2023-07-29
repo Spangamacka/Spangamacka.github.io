@@ -1,52 +1,104 @@
-.heroContainer {
+
+
+
+.container h1 {
+    max-width: 25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: var(--size-700);
+    color: var(--clr-primary);
+}
+
+.container h2 {
+    font-weight: 500;
+    font-size: var(--size-500);
+    color: var(--clr-text-dark);
+    max-width: 27rem;
+}
+
+.container h3 {
+    font-weight: 500;
+    color: var(--clr-primary);
+}
+
+.even_columns {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px 0px;
+    gap: 1rem;
 }
 
-.mainTitle {
+.padding_block_900 {
+    padding-block: var(--size-900);
+}
+
+.padding_block_700 {
+    padding-block: var(--size-700);
+}
+
+.button_holder {
     display: flex;
-    max-width: 500px;
-    line-height: 53px;
+    justify-content: space-between;
+    max-width: 27rem;
+} 
+
+.flow > * + * {
+    margin-top: 1.5em;
 }
 
-.hero {
-    text-align: left;
-    padding-left: 36.66%;
-    padding-top: 5%;
+.lasjourInfo {
+    margin-top: 3rem;
+}
+
+.lasjourInfo h3 {
+    max-width: 12rem;
     
 }
 
-.hero h1 {
-    color: var(--clr-primary);
-    font-weight: 700;
-    font-size: 3rem;
+@media (min-width: 62em) {
+
+    .container {
+        --max-width: 1200px;
+        --padding: 1rem;
+    
+        width: min(var(--max-width, 100% - var(--padding) * 2));
+        margin-inline: auto;
+    }
+    .even_columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+
 }
 
-.hero h2 {
-    color: var(--clr-text-dark);
-    font-weight: 800;
-    font-size: 1.2rem;
-    max-width: 250px;
+@media ((max-width: 62rem) and (min-width: 27.5rem)) {
+    .lasjourInfo {
+        flex-wrap:wrap;
+        align-content: flex-start;
+        border: 1px solid lime;
+    }
 }
 
-.hero h3 {
-    color: var(--clr-text-dark);
-    font-weight: 500;
-    font-size: 1.5rem;
-    max-width: 650px;
-}
+@media (max-width: 61em) {
+    .heroImage {
+        display: none;
+    }
+
+    .desktop_button {
+        visibility: none;
+        display: none;
+    }
 
 
-.boxHolder {
-    display: flex;
-    justify-content: left;
-}
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 
-.btn_holder {
-    padding: 0 0 4rem 0;
-    display: flex;
-    justify-content: space-between;
-    width: 27rem;
+    .lasjourInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

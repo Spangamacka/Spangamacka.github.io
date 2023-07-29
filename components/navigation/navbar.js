@@ -1,49 +1,76 @@
-import classes from './navbar.module.css';
-import Image from 'next/image';
-import ActionButtonSolidSmall from '../buttons/button-solid-small.js';
-
+import classes from "./navbar.module.css";
+import Image from "next/image";
+import ActionButtonSolidSmall from "../buttons/button-solid-small.js";
+import Link from "next/link";
+import { useState } from "react";
 
 function Navbar() {
-    return (
-        <div className={classes.navbar_container}>
-            <div className={classes.logo_container}>
-            <Image
-                    src="/NylåsLogo.svg"
-                    width={112}
-                    height={112}
-                    quality={100}
-                    alt="NylåsLogo"
-                    />
-            </div>
-            <div className={classes.navigation_items_holder}>
-               <div className={classes.navigation_items}>
-                <div className={classes.navigation_item}>
-                    Tjänster 
-                    <div className={classes.icon_holder}><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 21 21" fill="none">
-                        <path d="M17.4303 7.83105L11.7253 13.5361C11.0516 14.2098 9.94906 14.2098 9.27531 13.5361L3.57031 7.83105" stroke="#003594" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-                <div className={classes.navigation_item}>
-                    Kunskapsbank
-                    <div className={classes.icon_holder}><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 21 21" fill="none">
-                        <path d="M17.4303 7.83105L11.7253 13.5361C11.0516 14.2098 9.94906 14.2098 9.27531 13.5361L3.57031 7.83105" stroke="#003594" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    </div>
-                <div className={classes.navigation_item}>Om oss</div>
-                <div className={classes.navigation_item}>Kontakt</div>
-               </div>
-            </div>
-            <div className={classes.navigation_attention}>
-                <div>
-                    <ActionButtonSolidSmall text="Rådfråga Oss" />
-                </div>
-            </div>
-        </div>
 
-        
-    )
+ const [navActive, setNavActive] = useState(false);
+
+ function handleClick() {
+    console.log("Hamburger pressed");
+    setNavActive(!navActive);
+    console.log(navActive);
+ }
+
+  return (
+    <header className={classes.primary_header}>
+      <div className={classes.container}>
+        <div className={classes.nav_wrapper}>
+          <Link href="/">
+            <Image
+              src="/NylåsLogo.svg"
+              width={90}
+              height={35}
+              quality={100}
+              alt="NylåsLogo"
+            />
+          </Link>
+          {/* Add Aria-control to this for accessability */}
+          <button className={classes.mobile_nav_toggle}
+            onClick={handleClick}
+            aria-controls="primary-navigation"
+          >
+            <img
+              className={classes.icon_hamburger}
+              src="/icon-hamburger.svg"
+              alt="icon-hamburger"
+            />
+            <img
+              className={classes.icon_close}
+              src="/icon-close.svg"
+              alt="icon-close"
+            />
+       
+            <span className={classes.visually_hidden}>Menu</span>
+          </button>
+
+         
+
+          <nav className={classes.primary_navigation} id="primary-navigation">
+            <ul aria_label="Primary" role="list" className={classes.nav_list}>
+              <li>
+                <Link href="#">Tjänster</Link>
+              </li>
+              <li>
+                <Link href="#">Kunskapsbank</Link>
+              </li>
+              <li>
+                <Link href="#">Om oss</Link>
+              </li>
+              <li>
+                <Link href="#">Kontakt</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className={classes.display_md_inline_flex, classes.display_sm_none}>
+            <ActionButtonSolidSmall text="Rådfråga oss" />
+          </div>
+        </div>
+      </div>
+    </header>
+  );
 }
 
 export default Navbar;

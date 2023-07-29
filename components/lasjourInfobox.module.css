@@ -1,5 +1,5 @@
 .container {
-    background-color: var(--clr-background-blue);
+    background-color: var(--clr-white-primary);
     border: 1px solid #CFDFFB;
     display: flex;
     justify-content: space-around;
@@ -9,14 +9,12 @@
 
 
 .jourinfo {
-    border-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .lasjourLogo {
-    border-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;

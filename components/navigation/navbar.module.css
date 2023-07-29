@@ -1,68 +1,86 @@
-@media (max-width: 988px) {
 
-    .navbar_container {
-        visibility: hidden;
-    }
-  
 
-    .mobile_navigation {
-        border: 1px solid red;
-        display: flex;
-        width: 100%;
-        height: auto;
-        max-width: 1179px;
-        justify-content: space-between;
-        align-items: stretch;
-        margin-right: auto;
-        position: static;
-    }
-  }
-
-.navbar_container {
-    display: flex;
-    width: 100%;
-    height: auto;
+  .primary_header {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     max-width: 1200px;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-left: auto;
-    margin-right: auto;
-    position: static;
-}
-
-.logo_container {
-    align-items: center;
-    display: flex;
-    position: relative;
+    margin: auto;
+    position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid var(--clr-background-blue);
     
-}
+    
+} 
+ 
 
-.navigation_items_holder {
+.nav_wrapper {
     display: flex;
-}
-
-.navigation_items {
-    display: flex;
-}
-
-.navigation_item {
+    justify-content: space-between;
     align-items: center;
+}
+
+.mobile_nav_toggle {
+    display: none;
+}
+
+.nav_list {
     display: flex;
-    padding-left: 1.25rem;
-    font-weight: 800;
-    font-size: 1.1rem;
+    gap: clamp(1.5rem, 5vw, 4rem);
+    font-weight: 600;
     color: var(--clr-primary);
 }
 
-.navigation_attention {
-    display: flex;
-    align-items: center;
+.nav_list a {
+    text-decoration: none;
+    color: var(--clr-primary);
+    font-weight: 700;
+}
+
+.nav_list a:hover,
+.nav_list a:focus {
+    color: var(--clr-secondary);
+}
+
+
+@media (min-width: 50em) {
+    .display_md_inline_flex {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 50em) {
+    .primary_navigation {
+        display: none;
+    }
+
+    .mobile_nav_toggle {
+        display: block;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        padding: 0.5rem;
+    }
+    
+
+    .mobile_nav_toggle .icon_close {
+        display: none;
+    }
+
+    .display_sm_none {
+        display: none;
+    }
     
 }
 
-.icon_holder {
-    display: flex;
-    justify-content: center;
-    margin-left: 0.2rem;
-    margin-top: 0.1rem;
+
+
+.visually_hidden {
+    display: none;
 }
+
