@@ -3,8 +3,8 @@ import { Fragment } from 'react';
 import Hero from '../components/home-page/hero';
 import Navbar from '../components/navigation/navbar';
 import FeaturedServices from '../components/home-page/featured-services.js';
-
 import CompanyFace from '../components/home-page/company-face.js';
+import SmartLockSection from '../components/home-page/smartlock-section.js';
 
 
 
@@ -13,9 +13,10 @@ export default function HomePage() {
     
     <Fragment>
       <Navbar />
-       <Hero />
+       {/* <Hero />
        <FeaturedServices />
-       <CompanyFace />
+       <CompanyFace /> */}
+       <SmartLockSection />
     </Fragment>
       
   )

@@ -1,0 +1,49 @@
+.even_columns {
+    display: grid;
+    gap: 1rem;
+}
+
+.feature_item {
+    background-color: white;
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (min-width: 62em) {
+
+    .container {
+        --max-width: 1200px;
+        --padding: 1rem;
+    
+        width: min(var(--max-width, 100% - var(--padding) * 2));
+        margin-inline: auto;
+    }
+    .even_columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+
+    .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--clr-background-blue);
+        max-width: 30rem;
+    }
+
+}
+
+@media (max-width: 61em) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
