@@ -4,7 +4,7 @@ import Hero from '../components/home-page/hero';
 import Navbar from '../components/navigation/navbar';
 import FeaturedServices from '../components/home-page/featured-services.js';
 
-import FeatureCard from '../components/home-page/feature-card.js';
+import CompanyFace from '../components/home-page/company-face.js';
 
 
 
@@ -15,6 +15,7 @@ export default function HomePage() {
       <Navbar />
        <Hero />
        <FeaturedServices />
+       <CompanyFace />
     </Fragment>
       
   )

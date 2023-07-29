@@ -1,0 +1,54 @@
+
+
+.background_holder {
+    
+    position: relative;
+    display: block;
+    height: 52rem;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+}
+
+.face_bg {
+    position: absolute;
+    width: 95rem;
+    height: 35%;
+    background-color: var(--clr-background-blue);
+    z-index: 2;
+    right: 0%;
+    top: 23%;
+    transform: translate();
+}
+
+.face_text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    z-index: 2;
+    background-color: var(--clr-background-blue);
+    width: 90%;
+}
+
+.face_text h1{
+    color: var(--clr-primary);
+    padding: 2rem;
+}
+
+.face_text p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    color: var(--clr-text-dark);
+    font-size: 1.3rem;
+    max-width: 41rem;
+    font-weight: 600;
+}
+
+@media (max-width: 31.25rem){
+    .face_text {
+        
+        transform: translate(0%, -30%);
+    }
+}
