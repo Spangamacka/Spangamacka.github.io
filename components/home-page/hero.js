@@ -7,9 +7,14 @@ import Image from 'next/image';
 function Hero() {
     return (
         <main>
+            <div className={classes.heroBackground}>
+                    {/* Make background image here */}
+                    </div>
             <section className={classes.padding_block_700}>
                 <div className={classes.container}>
+                   
                     <div className={classes.even_columns}>
+                    
                         <div className={classes.flow}>
                             <h1>Låsservice i hela Stockholm</h1>
                             <h2>Vi skapar effektiva lösningar inom lås för privatpersoner, företag och bostadsrättsföreningar</h2>

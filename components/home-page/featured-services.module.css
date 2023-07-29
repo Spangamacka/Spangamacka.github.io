@@ -1,0 +1,36 @@
+
+.container {
+    background-color: var(--clr-background-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+.service_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-primary);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+.cards_holder {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    max-width: 30rem;
+}
+
+.btn_holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+}
+
