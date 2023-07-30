@@ -5,7 +5,6 @@
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 1200px;
     margin: auto;
     position: fixed;
     top: 0%;
@@ -14,15 +13,20 @@
     right: 0%;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid var(--clr-background-blue);
-    
-    
+    z-index: 5;
 } 
  
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
 
 .nav_wrapper {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .mobile_nav_toggle {

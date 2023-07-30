@@ -3,14 +3,58 @@
     gap: 1rem;
 }
 
+.actionPrompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.actionPrompt a {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
 .feature_item {
     background-color: white;
-    width: 20rem;
-    height: 5rem;
+    /* width: 35rem; */
+    width: 100%;
+    height: 40rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+
+.features {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    background-color: var(--clr-background-blue);
+    max-height: 40rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.iconHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.featureInfoHolder {
+    max-width: 18rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 600;
+    color: var(--clr-primary);
+}
+
 
 
 @media (min-width: 62em) {
@@ -21,20 +65,34 @@
     
         width: min(var(--max-width, 100% - var(--padding) * 2));
         margin-inline: auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        
     }
     .even_columns {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
 
-    .features {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: var(--clr-background-blue);
-        max-width: 30rem;
+    .even_columns h1 {
+        max-width: 26rem;
+        color: var(--clr-primary);
+        font-size: 2.65rem;
+        line-height: 1.2;
     }
+
+    .even_columns h2 {
+        max-width: 25rem;
+        font-size: 1.4rem;
+    }
+
+    .even_columns p {
+        max-width: 23rem;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+  
 
 }
 
@@ -45,5 +103,31 @@
         justify-content: center;
         padding-right: 2rem;
         padding-left: 2rem;
+        padding-top: 2rem;
+    }
+
+    .even_columns h1 {
+        color: var(--clr-primary);
+        text-align: center;
+    }
+
+    .even_columns {
+        text-align: center;
+    }
+
+    .features {
+        justify-content:flex-start;
+        max-height: none;
+    }
+
+    .feature_item {
+        flex-direction: column;
+        text-align: center;
+        max-height: 15rem;
+        
+    }
+
+    .actionPrompt {
+        align-items: center;
     }
 }

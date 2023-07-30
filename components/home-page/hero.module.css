@@ -75,7 +75,6 @@
     .lasjourInfo {
         flex-wrap:wrap;
         align-content: flex-start;
-        border: 1px solid lime;
     }
 }
 

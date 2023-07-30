@@ -10,7 +10,7 @@ function LasjourInfobox() {
                 </div>
                 <div className={classes.lasjourLogo}>
                     <Image
-                    src="/Låsjourblack.svg"
+                    src="/logo/Låsjourblack.svg"
                     width={80}
                     height={100}
                     alt="LåsjourStockholm.logo"

@@ -8,17 +8,17 @@ function FeatureCard() {
       <div className={classes.cardContainer}>
         <div>
         <Image
-          src="/key5.svg"
+          src="/icons/key_icon.svg"
           width={100}
           height={100}
           alt="key_icon"
         />
-        </div>
-        
-        <div className={classes.quickInfo}>
-          <div>
+        <div>
             <h2>Låsbyte</h2>
           </div>
+        </div>
+        
+        <div className={classes.quickInfo}>         
           <p>
             Vi installerar och byter lås. Nylås hjälper dig med dina lås genom
             skräddarsydda lösningar just för dig eller ditt företag.

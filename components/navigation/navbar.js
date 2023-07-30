@@ -20,7 +20,7 @@ function Navbar() {
         <div className={classes.nav_wrapper}>
           <Link href="/">
             <Image
-              src="/NylåsLogo.svg"
+              src="/logo/NylåsLogo.svg"
               width={90}
               height={35}
               quality={100}
@@ -34,7 +34,7 @@ function Navbar() {
           >
             <img
               className={classes.icon_hamburger}
-              src="/icon-hamburger.svg"
+              src="/icons/icon-hamburger.svg"
               alt="icon-hamburger"
             />
             <img

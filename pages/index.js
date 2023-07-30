@@ -5,6 +5,7 @@ import Navbar from '../components/navigation/navbar';
 import FeaturedServices from '../components/home-page/featured-services.js';
 import CompanyFace from '../components/home-page/company-face.js';
 import SmartLockSection from '../components/home-page/smartlock-section.js';
+import Footer from '../components/footer/footer.js';
 
 
 
@@ -13,10 +14,11 @@ export default function HomePage() {
     
     <Fragment>
       <Navbar />
-       {/* <Hero />
+       <Hero />
        <FeaturedServices />
-       <CompanyFace /> */}
+      {/*  <CompanyFace />
        <SmartLockSection />
+       <Footer /> */}
     </Fragment>
       
   )
