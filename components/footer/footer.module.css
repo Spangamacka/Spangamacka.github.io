@@ -81,6 +81,9 @@
     margin-right: 10px;
   }
   
+  .temp {
+    color: white;
+  }
 
   @media (max-width: 900px) {
     footer .content .link_boxes{

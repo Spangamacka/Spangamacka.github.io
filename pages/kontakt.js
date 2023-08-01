@@ -9,7 +9,7 @@ function KontaktPage() {
           <h1>Kontakt</h1>
           <p>
             Välkommen till Nylås låsjour, dina låssmeder för byte och
-            installation av lås i Stockholm.  
+            installation av lås i Stockholm. 
           </p>
           <div className={classes.contact}>
             <h2>Tveka inte att kontakta oss med era frågor</h2>
@@ -24,8 +24,10 @@ function KontaktPage() {
           <div className={classes.temp_filler}></div>
         </div>
         
-        <div className={classes.image_holder}>
-          <div></div>
+        <div className={classes.image_container}>
+          <div className={classes.image_holder}>
+            <Image src="/kontakt/placeholder_kontakt.webp" fill alt="kontakta-oss" />
+          </div>
         </div>
       </div>
       

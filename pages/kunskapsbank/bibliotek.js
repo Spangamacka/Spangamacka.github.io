@@ -134,8 +134,10 @@ function Bibliotek() {
           </div>
         </div>
 
-        <div className={classes.image_holder}>
-          <div>Large Image</div>
+        <div className={classes.image_container}>
+          <div className={classes.image_holder}>
+            <Image src="/bibliotek/learning.webp" fill alt="lära-sig-om-lås" />
+          </div>
         </div>
       </div>
     </div>

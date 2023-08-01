@@ -60,7 +60,28 @@
     font-weight: 600;
 }
 
+.image_container {
+    display: flex;
+    justify-content: center;
+}
+
+.image_holder {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  
+}
+
 @media (min-width: 62em) {
+
+    .image_holder {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+      
+    }
 
     .container {
         --max-width: 1200px;

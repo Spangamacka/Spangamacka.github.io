@@ -100,8 +100,10 @@ function LasbytePage() {
             <ActionButton text="Kontakta oss" />
             </Link>
         </div>
-        <div className={classes.image_holder}>
-          <div>Large Image</div>
+        <div className={classes.image_container}>
+          <div className={classes.image_holder}>
+            <Image src="/lasbyte/lasbyte_full.webp" fill alt="låsöppning-i-arbete" />
+          </div>
         </div>
       </div>
     </div>

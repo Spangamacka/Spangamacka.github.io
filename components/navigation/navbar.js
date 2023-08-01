@@ -73,7 +73,7 @@ function Navbar() {
             </ul>
           </nav>
           <div className={classes.display_md_inline_flex, classes.display_sm_none}>
-            <Link href="kontakta-oss">
+            <Link href="/tjanster">
             <ActionButtonSolidSmall text="Rådfråga oss" />
             </Link>
           </div>

@@ -66,13 +66,13 @@ function Footer() {
                 <span className={classes.heading}>Kunder</span>
               </li>
               <li>
-                <a href="#">Bostadsrättsföreningar</a>
+                <span className={classes.temp}>Bostadsrättsföreningar</span>
               </li>
               <li>
-                <a href="#">Företag</a>
+                <span className={classes.temp}>Företag</span>
               </li>
               <li>
-                <a href="#">Privatpersoner</a>
+                <span className={classes.temp}>Privatpersoner</span>
               </li>
             </ul>
             <ul className={classes.box}>
@@ -80,16 +80,7 @@ function Footer() {
                 <span className={classes.heading}>Nyttigt</span>
               </li>
               <li>
-                <a href="#">Vanliga Frågor</a>
-              </li>
-              <li>
-                <a href="#">Kunskapsbank</a>
-              </li>
-              <li>
-                <a href="#">Hur fungerar det</a>
-              </li>
-              <li>
-                <a href="#">Försäkring</a>
+                <a href="/kunskapsbank/bibliotek">Kunskapsbank</a>
               </li>
             </ul>
           </div>

@@ -1,5 +1,6 @@
 import classes from "./tjanster.module.css";
 import Link from "next/link";
+import Image from 'next/image';
 
 function TjansterPage() {
   return (
@@ -94,8 +95,10 @@ function TjansterPage() {
           </div>
         </div>
 
-        <div className={classes.image_holder}>
-          <div>Large Image</div>
+        <div className={classes.image_container}>
+          <div className={classes.image_holder}>
+            <Image src="/placerholder_keyman.svg" fill alt="låssmed" />
+          </div>
         </div>
       </div>
     </div>

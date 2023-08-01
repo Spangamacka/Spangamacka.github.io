@@ -51,6 +51,9 @@
     
 }
 
+.lasjourbox a{
+    text-decoration: none;
+}
 
 @media (min-width: 62em) {
 

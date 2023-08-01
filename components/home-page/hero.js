@@ -25,7 +25,7 @@ function Hero() {
 
               <div className={classes.button_holder}>
                 <div>
-                  <Link href="/kontakta-oss">
+                  <Link href="/kunskapsbank/bibliotek">
                   <ActionButton text="Hur kan vi hjälpa till?" />
                   </Link>
                 </div>
@@ -37,8 +37,10 @@ function Hero() {
               </div>
               <div className={classes.lasjourInfo}>
                 <h3>Akut utelåst? Ring oss så hjälper vi dig</h3>
-                <div>
+                <div className={classes.lasjourbox}>
+                  <Link href="https://www.xn--stockholmlsjour-qlb.se/">
                   <LasjourInfobox />
+                  </Link>
                 </div>
               </div>
             </div>

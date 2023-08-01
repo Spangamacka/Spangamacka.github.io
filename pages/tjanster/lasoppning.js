@@ -1,4 +1,5 @@
 import classes from "./lasoppning.module.css";
+import Image from 'next/image';
 
 function LasoppningPage() {
   return (
@@ -33,8 +34,10 @@ function LasoppningPage() {
             så hjälper vi på Nylås dig.
           </p>
         </div>
-        <div className={classes.image_holder}>
-          <div>Large Image</div>
+        <div className={classes.image_container}>
+          <div className={classes.image_holder}>
+            <Image src="/lasoppning/lasoppning_img.webp" fill alt="låsöppning-i-arbete" />
+          </div>
         </div>
       </div>
     </div>

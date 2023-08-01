@@ -40,7 +40,29 @@
     color: var(--clr-primary);
     
 }
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image_holder {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    object-fit: contain;
+  
+}
 @media (min-width: 62em) {
+
+    .image_holder {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        object-fit: contain;
+      
+    }
 
     .container {
         --max-width: 1200px;

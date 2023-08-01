@@ -55,7 +55,29 @@
     margin-bottom: 2rem;
 }
 
+.image_container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image_holder {
+    position: relative;
+    width: 325px;
+    height: 325px;
+    object-fit: contain;
+  
+}
+
 @media (min-width: 62em) {
+
+    .image_holder {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+      
+    }
 
     .container {
         --max-width: 1200px;
