@@ -1,7 +1,8 @@
 .footer{
-    position: relative;
+    
     background: var(--clr-primary);
     width: 100%;
+    position: relative;
     bottom: 0;
     left: 0;
   }
@@ -68,7 +69,7 @@
   }
   .bottom_details .bottom_text span,
   .bottom_details .bottom_text a{
-    font-size: 1rem;
+
     font-weight: 300;
     color: #fff;
     text-decoration: none;
@@ -80,6 +81,7 @@
     margin-right: 10px;
   }
   
+
   @media (max-width: 900px) {
     footer .content .link_boxes{
       flex-wrap: wrap;

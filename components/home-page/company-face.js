@@ -7,10 +7,10 @@ function CompanyFace() {
       {/* <div className={classes.face_bg}></div> */}
       <div className={classes.face_text_test}>
         <div className={classes.bg_graphic}>
-          <h1>Vi är en låssmed med låsjour i hela stockholm. </h1>
+          <h1>Byte lås eller utelåst? Vi har låsjour i hela stockholm.</h1>
           <p>
-            Vi hjälper privatpersoner och företag med låsöppning, montering och
-            installation. Vi värdesätter en tydlig kommunikation om tid,
+            Vi byter lås, monterar och sköter låsöppning för både privatpersoner
+            och företag. Vi värdesätter en tydlig kommunikation om tid,
             utförande och kostnad. Ett tydligt upplägg och skickligt utförande
             är hur vi bedriver vår verksamhet. tveka inte att kontakta oss för
             ett snabbt och kvalitativt utförande!

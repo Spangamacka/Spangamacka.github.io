@@ -9,16 +9,15 @@ import Footer from '../components/footer/footer.js';
 
 
 
+
 export default function HomePage() {
   return (
     
     <Fragment>
-      <Navbar />
        <Hero />
        <FeaturedServices />
-      {/*  <CompanyFace />
+       <CompanyFace />
        <SmartLockSection />
-       <Footer /> */}
     </Fragment>
       
   )

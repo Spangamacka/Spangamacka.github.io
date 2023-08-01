@@ -3,10 +3,11 @@ import ActionButton from "../buttons/button-solid.js";
 import ActionButtonHollow from "../buttons/button-hollow.js";
 import LasjourInfobox from "../lasjourInfobox.js";
 import Image from "next/image";
+import Link from 'next/link';
 
 function Hero() {
   return (
-    <main>
+    <div>
       <div className={classes.heroBackground}>
         {/* Make background image here */}
       </div>
@@ -14,18 +15,24 @@ function Hero() {
         <div className={classes.container}>
           <div className={classes.even_columns}>
             <div className={classes.flow}>
-              <h1>Låsservice i hela Stockholm</h1>
+              <h1>Din låssmed med jour i Stockholm</h1>
               <h2>
-                Vi skapar effektiva lösningar inom lås för privatpersoner,
-                företag och bostadsrättsföreningar
+                Vi skapar säkra och
+                skräddarsydda lösningar för privatpersoner, bolag och
+                bostadsrättsföreningar. Vare sig du har blivit utelåst eller
+                vill få det senaste kodlåset monterat.
               </h2>
 
               <div className={classes.button_holder}>
                 <div>
+                  <Link href="/kontakta-oss">
                   <ActionButton text="Hur kan vi hjälpa till?" />
+                  </Link>
                 </div>
                 <div className={classes.desktop_button}>
+                  <Link href="/tjanster">
                   <ActionButtonHollow text="Våra Tjänster" />
+                  </Link>
                 </div>
               </div>
               <div className={classes.lasjourInfo}>
@@ -48,9 +55,7 @@ function Hero() {
           <div></div>
         </div>
       </section>
-
-      <section></section>
-    </main>
+    </div>
   );
 }
 

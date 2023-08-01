@@ -3,6 +3,19 @@
     gap: 1rem;
 }
 
+.even_columns h2 {
+    color: var(--clr-text-dark);
+    font-size: 1.25rem;
+}
+
+/*P text  */
+.smartlock_text {
+    font-weight: 400;
+    font-size: 1.15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .actionPrompt {
     display: flex;
     flex-direction: column;
@@ -55,9 +68,33 @@
     color: var(--clr-primary);
 }
 
+.read_more {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--clr-secondary);
+    margin-bottom: 1.5rem;
+}
 
+.mobile_feature_text {
+    margin-top: 1rem;
+}
 
-@media (min-width: 62em) {
+.container {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 61em) {
+
+    .mobile_feature_text {
+        visibility: hidden;
+        display: none;
+       
+    }
 
     .container {
         --max-width: 1200px;
@@ -67,7 +104,9 @@
         margin-inline: auto;
         padding-top: 5rem;
         padding-bottom: 5rem;
-        
+    }
+    .features_container {
+        margin-left: 5rem;
     }
     .even_columns {
         grid-auto-flow: column;
@@ -77,22 +116,18 @@
     .even_columns h1 {
         max-width: 26rem;
         color: var(--clr-primary);
-        font-size: 2.65rem;
+        font-size: 2.5rem;
         line-height: 1.2;
     }
 
     .even_columns h2 {
-        max-width: 25rem;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
 
     .even_columns p {
-        max-width: 23rem;
         font-size: 1.1rem;
-        margin-bottom: 2rem;
     }
-
-  
 
 }
 
@@ -101,8 +136,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
         padding-top: 2rem;
     }
 
@@ -124,10 +159,17 @@
         flex-direction: column;
         text-align: center;
         max-height: 15rem;
+        justify-content: center;
+        align-items: center;
         
     }
 
     .actionPrompt {
         align-items: center;
+    }
+
+    .spacer {
+        height: 3rem;
+        
     }
 }

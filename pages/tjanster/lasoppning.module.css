@@ -1,16 +1,17 @@
-
-
+.container {
+    padding-bottom: 3rem;
+}
 
 .container h1 {
     line-height: 1.2;
     font-weight: 700;
-    font-size: var(--size-700);
+    font-size: var(--size-600);
     color: var(--clr-primary);
 }
 
 .container h2 {
     font-weight: 500;
-    font-size: var(--size-500);
+    font-size: var(--size-400);
     color: var(--clr-text-dark);
 }
 
@@ -24,34 +25,21 @@
     gap: 1rem;
 }
 
-.padding_block_900 {
-    padding-block: var(--size-900);
-}
-
-.padding_block_700 {
-    padding-block: var(--size-700);
-}
-
-.button_holder {
+.image_holder {
     display: flex;
-    justify-content: space-between;
-    max-width: 27rem;
-} 
-
-.flow > * + * {
-    margin-top: 1.5em;
+    justify-content: center;
+    align-items: center;
 }
 
-.lasjourInfo {
-    margin-top: 3rem;
+.second_section {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
-.lasjourInfo h3 {
-    max-width: 12rem;
+.font_color {
+    color: var(--clr-primary);
     
 }
-
-
 @media (min-width: 62em) {
 
     .container {
@@ -61,6 +49,9 @@
         width: min(var(--max-width, 100% - var(--padding) * 2));
         margin-inline: auto;
     }
+    .container p {
+        font-size: 18px;
+    }
     .even_columns {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
@@ -68,35 +59,13 @@
 
 }
 
-@media ((max-width: 62rem) and (min-width: 27.5rem)) {
-    .lasjourInfo {
-        flex-wrap:wrap;
-        align-content: flex-start;
-    }
-}
 
 @media (max-width: 61em) {
-    .heroImage {
-        display: none;
-    }
-
-    .desktop_button {
-        visibility: none;
-        display: none;
-    }
-
-
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-right: 2rem;
         padding-left: 2rem;
-    }
-
-    .lasjourInfo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }

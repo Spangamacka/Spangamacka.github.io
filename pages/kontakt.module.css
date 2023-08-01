@@ -1,16 +1,27 @@
+.container {
+    padding-bottom: 11.5rem;
+}
 
+.container ul, .container li {
+    list-style: none;
+    text-decoration: none;
+}
 
+.container ul {
+    padding-left: 0;
+    margin-left: 0;
+}
 
 .container h1 {
     line-height: 1.2;
     font-weight: 700;
-    font-size: var(--size-700);
+    font-size: var(--size-600);
     color: var(--clr-primary);
 }
 
 .container h2 {
     font-weight: 500;
-    font-size: var(--size-500);
+    font-size: var(--size-400);
     color: var(--clr-text-dark);
 }
 
@@ -24,33 +35,30 @@
     gap: 1rem;
 }
 
-.padding_block_900 {
-    padding-block: var(--size-900);
-}
-
-.padding_block_700 {
-    padding-block: var(--size-700);
-}
-
-.button_holder {
+.image_holder {
     display: flex;
-    justify-content: space-between;
-    max-width: 27rem;
-} 
-
-.flow > * + * {
-    margin-top: 1.5em;
+    justify-content: center;
+    align-items: center;
 }
 
-.lasjourInfo {
-    margin-top: 3rem;
+.bullet_point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--clr-primary);
+    font-weight: 600;
 }
 
-.lasjourInfo h3 {
-    max-width: 12rem;
-    
+.second_section {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
+.contact {
+    color: var(--clr-primary);
+    font-weight: 600;
+}
 
 @media (min-width: 62em) {
 
@@ -61,42 +69,26 @@
         width: min(var(--max-width, 100% - var(--padding) * 2));
         margin-inline: auto;
     }
+    .container p {
+        font-size: 18px;
+    }
     .even_columns {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
 
-}
-
-@media ((max-width: 62rem) and (min-width: 27.5rem)) {
-    .lasjourInfo {
-        flex-wrap:wrap;
-        align-content: flex-start;
+    .container {
+        height: 100vh;
     }
 }
+
 
 @media (max-width: 61em) {
-    .heroImage {
-        display: none;
-    }
-
-    .desktop_button {
-        visibility: none;
-        display: none;
-    }
-
-
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-right: 2rem;
         padding-left: 2rem;
-    }
-
-    .lasjourInfo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }

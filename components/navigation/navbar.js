@@ -4,6 +4,13 @@ import ActionButtonSolidSmall from "../buttons/button-solid-small.js";
 import Link from "next/link";
 import { useState } from "react";
 
+
+import { Red_Hat_Display } from 'next/font/google'
+const redhatdisplay = Red_Hat_Display ({
+    subsets: ['latin'],
+    weight: ['300', '400', '500', '600', '700', '800'],
+  });
+
 function Navbar() {
 
  const [navActive, setNavActive] = useState(false);
@@ -15,6 +22,7 @@ function Navbar() {
  }
 
   return (
+    <div className={redhatdisplay.className}>
     <header className={classes.primary_header}>
       <div className={classes.container}>
         <div className={classes.nav_wrapper}>
@@ -51,25 +59,28 @@ function Navbar() {
           <nav className={classes.primary_navigation} id="primary-navigation">
             <ul aria_label="Primary" role="list" className={classes.nav_list}>
               <li>
-                <Link href="#">Tjänster</Link>
+                <Link href="/tjanster">Tjänster</Link>
               </li>
               <li>
-                <Link href="#">Kunskapsbank</Link>
+                <Link href="/kunskapsbank/bibliotek">Kunskapsbank</Link>
               </li>
               <li>
-                <Link href="#">Om oss</Link>
+                <Link href="/om-oss">Om oss</Link>
               </li>
               <li>
-                <Link href="#">Kontakt</Link>
+                <Link href="/kontakt">Kontakt</Link>
               </li>
             </ul>
           </nav>
           <div className={classes.display_md_inline_flex, classes.display_sm_none}>
+            <Link href="kontakta-oss">
             <ActionButtonSolidSmall text="Rådfråga oss" />
+            </Link>
           </div>
         </div>
       </div>
     </header>
+    </div>
   );
 }
 
