@@ -5,9 +5,9 @@ function CompanyFace() {
   return (
     <div>
       {/* <div className={classes.face_bg}></div> */}
-      <div className={classes.face_text_test}>
+      <div className={classes.face_text}>
         <div className={classes.bg_graphic}>
-          <h1>Byte lås eller utelåst? Vi har låsjour i hela stockholm.</h1>
+          <h3>Byte lås eller utelåst? Vi har låsjour i hela stockholm.</h3>
           <p>
             Vi byter lås, monterar och sköter låsöppning för både privatpersoner
             och företag. Vi värdesätter en tydlig kommunikation om tid,

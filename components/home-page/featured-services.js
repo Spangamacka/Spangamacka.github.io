@@ -23,11 +23,15 @@ function FeaturedServices() {
           <div className={classes.cardContainer}>
             <div>
               <div className={classes.key_image_holder}>
+              <Link href="/tjanster/lasbyte">
                 <Image src="/icons/key_icon_m.svg" fill alt="key_icon" />
+                </Link>
               </div>
 
               <div className={classes.feature_title}>
+              <Link href="/tjanster/lasbyte">
                 <h2>Låsbyte</h2>
+                </Link>
               </div>
             </div>
 
@@ -46,14 +50,18 @@ function FeaturedServices() {
           <div className={classes.cardContainer}>
             <div>
               <div className={classes.image_holder}>
+              <Link href="/tjanster/lasoppning">
                 <Image
                   src="/icons/openlock_icon.svg"
                   fill
                   alt="låsöppning_icon"
                 />
+                </Link>
               </div>
               <div className={classes.feature_title}>
+              <Link href="/tjanster/lasoppning">
                 <h2>Låsöppning</h2>
+                </Link>
               </div>
             </div>
 
@@ -72,11 +80,15 @@ function FeaturedServices() {
           <div className={classes.cardContainer}>
             <div>
               <div className={classes.image_holder_smartlock}>
+              <Link href="/tjanster/smartlas">
                 <Image src="/icons/smartlock_icon.svg" fill alt="key_icon" />
+                </Link>
               </div>
 
               <div className={classes.feature_title}>
+              <Link href="/tjanster/smartlas">
                 <h2>Smartlås</h2>
+                </Link>
               </div>
             </div>
 
@@ -93,8 +105,9 @@ function FeaturedServices() {
             </div>
           </div>
 
+
           <div className={classes.cardContainer_mobile}>
-            <Link href="/tjänster">
+            <Link href="/tjanster">
               <div className={classes.image}>
                 <Image
                   src="/icons/arrow-right.svg"
@@ -112,12 +125,12 @@ function FeaturedServices() {
       </div>
 
       <div className={classes.btn_holder_desktop}>
-      <Link href="/tjanster/">
+      <Link href="/tjanster">
                   <ActionButton text="Se allt vi gör" />
                 </Link>
       </div>
 
-      <div className={classes.separator}></div>
+     <div className={classes.separator}></div>
     </div>
   );
 }

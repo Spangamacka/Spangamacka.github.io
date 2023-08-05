@@ -162,7 +162,7 @@ function SmartlasPage() {
         </div>
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <Image src="/smartlas/placeholder_smartlas.webp" fill alt="smartlås" />
+            <Image src="/smartlas/smartlas-yale-byte.webp" fill alt="låsbyte-smartlås-yale-doorman" />
           </div>
         </div>
       </div>

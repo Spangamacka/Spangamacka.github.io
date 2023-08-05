@@ -35,13 +35,13 @@ function Footer() {
                 <span className={classes.heading}>Företag</span>
               </li>
               <li>
-                <Link href="#">info@nylas.se</Link>
+              <Link href="#">info@nylas.se</Link>
               </li>
               <li>
-                <Link href="#">08-121 541 88</Link>
+                <Link href="#">070-012 66 67</Link>
               </li>
               <li>
-                <Link href="#">Om oss</Link>
+                <Link href="/om-oss">Om oss</Link>
               </li>
             </ul>
             <ul className={classes.box}>
@@ -49,20 +49,20 @@ function Footer() {
                 <span className={classes.heading}>Tjänster</span>
               </li>
               <li>
-                <Link href="#">Låsjour</Link>
+                <Link href="https://www.xn--stockholmlsjour-qlb.se/">Låsjour</Link>
               </li>
               <li>
-                <Link href="#">Låsbyte</Link>
+                <Link href="/tjanster/lasbyte">Låsbyte</Link>
               </li>
               <li>
-                <Link href="#">Låsöppning</Link>
+                <Link href="/tjanster/lasoppning">Låsöppning</Link>
               </li>
               <li>
-                <Link href="#">Smartlås</Link>
+                <Link href="/tjanster/smartlas">Smartlås</Link>
               </li>
             </ul>
             <ul className={classes.box}>
-              <li class="link_name">
+              <li className={classes.link_name}>
                 <span className={classes.heading}>Kunder</span>
               </li>
               <li>
@@ -76,7 +76,7 @@ function Footer() {
               </li>
             </ul>
             <ul className={classes.box}>
-              <li class="link_name">
+              <li className={classes.link_name}>
                 <span className={classes.heading}>Nyttigt</span>
               </li>
               <li>

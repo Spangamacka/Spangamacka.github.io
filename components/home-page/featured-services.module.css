@@ -1,8 +1,13 @@
 
 .container {
-    background-color: var(--clr-background-blue);
     display: flex;
     flex-direction: column;
+    background-color: var(--clr-background-blue);
+}
+
+.container a {
+    text-decoration: none;
+    color: var(--clr-primary);
 }
 
 .service_info {
@@ -17,13 +22,12 @@
     
 }
 
-
-
 .cards_holder {
     
     max-width: 1200px;
     display: grid;
     margin:0;
+    gap: 0.5rem;
 }
 
 .text {
@@ -48,13 +52,6 @@
     padding: 1.5rem;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
-
-
 }
 
 .quickInfo p {
@@ -78,7 +75,6 @@
 }
 
 .cardContainer_mobile {
-    gap: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,22 +84,22 @@
     padding: 1.5rem;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
 }
 
 .image {
     display: flex;
     justify-content: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 
 .card_grid_holder {
     display: flex;
     justify-content: center;
+    background-color: var(--clr-background-blue);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .image_holder {
@@ -136,6 +132,8 @@
 }
 
 .separator {
+    
+    margin-top: 2rem;
     width: 100%;
     height: 5rem;
     background-color: white;
@@ -159,7 +157,6 @@
 
     .cardContainer_mobile {
         align-items: center;
-        margin-bottom: 1rem;
     }
 
     .feature_title {
@@ -167,12 +164,14 @@
         display: flex;
         justify-content: center;
     }
+    
 }
 
 
 @media (max-width: 70rem) {
     .cards_holder {
         grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
     }
 
     .image_holder {
@@ -208,18 +207,3 @@
     }
 }
 
-
-/*   Grid layout for when component feature card is ready
-
-@media (min-width: 600px) {
-    .info_cards_holder {
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-
-@media (min-width: 900px) {
-    .info_cards_holder {
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-  */

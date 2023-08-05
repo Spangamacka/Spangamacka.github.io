@@ -1,22 +1,20 @@
 
-
-
 .container h1 {
     line-height: 1.2;
     font-weight: 700;
     font-size: var(--size-700);
-    color: var(--clr-primary);
+    color: white;
 }
 
 .container h2 {
     font-weight: 500;
     font-size: var(--size-500);
-    color: var(--clr-text-dark);
+    color: white;
 }
 
 .container h3 {
     font-weight: 500;
-    color: var(--clr-primary);
+    color: white;
 }
 
 .even_columns {
@@ -24,12 +22,14 @@
     gap: 1rem;
 }
 
-.padding_block_900 {
-    padding-block: var(--size-900);
+.even_columns p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
 }
 
-.padding_block_700 {
-    padding-block: var(--size-700);
+.padding_hero {
+    padding-bottom: 4rem;
 }
 
 .button_holder {
@@ -47,7 +47,7 @@
 }
 
 .lasjourInfo h3 {
-    max-width: 12rem;
+    max-width: 14rem;
     
 }
 
@@ -55,7 +55,58 @@
     text-decoration: none;
 }
 
-@media (min-width: 62em) {
+.contact_prompt {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.contact_prompt_item {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.phone_number {
+    font-size: 1.5rem;
+    display: flex;
+    font-weight: 700;
+    max-width: 13rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid white;
+
+}
+
+.phone_number a {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
+@media (max-width: 23.48rem)
+{
+    .container h3{
+        color: black;
+    }
+
+    .contact_prompt {
+        padding-top: 9rem;
+        color: black;
+    }
+}
+
+@media (min-width: 61em) {
+    .image_holder {
+        display: none;
+        visibility: none;
+    }
+
+    .padding_hero {
+        padding-top: 9rem;
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+    }
 
     .container {
         --max-width: 1200px;
@@ -71,16 +122,61 @@
 
 }
 
-@media ((max-width: 62rem) and (min-width: 27.5rem)) {
+@media ((max-width: 61rem) and (min-width: 28.5rem)) {
     .lasjourInfo {
         flex-wrap:wrap;
         align-content: flex-start;
+
     }
 }
 
 @media (max-width: 61em) {
+
+    .contact_prompt {
+
+        justify-content: center;
+        align-items: center;
+    }
+
     .heroImage {
         display: none;
+    }
+
+
+
+    .image_holder {
+        
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 55px;
+        z-index: -10;
+        object-fit: contain;
+        
+    
+    }
+
+    .even_columns h1 {
+        color: white;
+       
+        font-size: 2.65rem;
+    }
+
+    .even_columns p {
+        color: rgb(255, 255, 255);
+        
+        font-weight: 400;
+        
+    }
+
+    .visibility_backdrop {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 3px;
+        background-color: #2c2c2c77;
     }
 
     .desktop_button {
@@ -95,6 +191,7 @@
         justify-content: center;
         padding-right: 2rem;
         padding-left: 2rem;
+        padding-top: 2rem;
     }
 
     .lasjourInfo {
@@ -103,3 +200,15 @@
         align-items: center;
     }
 }
+
+/* Media Query for low resolution Tablets, Ipad */
+@media (min-width: 481px) and (max-width: 900px) {
+    .button_holder {
+        justify-content: left;
+    }
+
+    .lasjourInfo {
+        align-items: flex-start;
+    }
+}
+

@@ -13,7 +13,7 @@ function KontaktPage() {
           </p>
           <div className={classes.contact}>
             <h2>Tveka inte att kontakta oss med era frågor</h2>
-            <p>08-121 541 88</p>
+            <p>070-012 66 67</p>
             <p>info@nylas.se</p>
           </div>
           <div className={classes.second_section}>

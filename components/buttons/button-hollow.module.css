@@ -3,10 +3,10 @@
     font-family: inherit;
     align-items: center;
     background-color: transparent;
-    border: 2px solid var(--clr-secondary);
+    border: 2px solid white;
     border-radius: 0.2em;
     box-sizing: border-box;
-    color: var(--clr-secondary);
+    color: white;
     cursor: pointer;
     display: inline-flex;
     fill: #000;

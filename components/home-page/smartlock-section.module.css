@@ -3,12 +3,16 @@
     gap: 1rem;
 }
 
-.even_columns h2 {
-    color: var(--clr-text-dark);
-    font-size: 1.25rem;
+.even_columns h1 {
+   text-align: left;
 }
 
-/*P text  */
+.even_columns h2 {
+    color: var(--clr-text-dark);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
 .smartlock_text {
     font-weight: 400;
     font-size: 1.15rem;
@@ -87,7 +91,10 @@
 
 .container {
     margin-bottom: 3rem;
+
 }
+
+
 
 @media (min-width: 61em) {
 
@@ -105,6 +112,8 @@
         margin-inline: auto;
         padding-top: 5rem;
         padding-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .features_container {
         margin-left: 5rem;
@@ -144,7 +153,7 @@
 
     .even_columns h1 {
         color: var(--clr-primary);
-        text-align: center;
+
     }
 
     .even_columns {

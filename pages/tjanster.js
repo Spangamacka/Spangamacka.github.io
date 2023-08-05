@@ -19,7 +19,7 @@ function TjansterPage() {
             <p>
               Nylås hjälper tryggt och enkelt till med låsöppningar. Är du
               utelåst eller har tappat en nyckel kan vår låsjour i Stockholm
-              hjälpa dig säkert på plats inom 30 minuter.{" "}
+              hjälpa dig säkert på plats inom 30 minuter.
             </p>
             <Link href="/tjanster/lasoppning">
               <span className={classes.read_more}>
@@ -34,18 +34,18 @@ function TjansterPage() {
                   <path
                     d="M16.835 6.91846L23.9166 14.0001L16.835 21.0818"
                     stroke="#0047C7"
-                    stroke-width="1.85"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.85"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M4.08301 14H23.718"
                     stroke="#0047C7"
-                    stroke-width="1.85"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.85"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </span>
@@ -64,8 +64,8 @@ function TjansterPage() {
               <span className={classes.read_more}>
                 Läs mer om låsbyten
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <path d="M16.835 6.91846L23.9166 14.0001L16.835 21.0818" stroke="#0047C7" stroke-width="1.85" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4.08301 14H23.718" stroke="#0047C7" stroke-width="1.85" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.835 6.91846L23.9166 14.0001L16.835 21.0818" stroke="#0047C7" strokeWidth="1.85" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4.08301 14H23.718" stroke="#0047C7" strokeWidth="1.85" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
                 </span>
             </Link>
@@ -81,8 +81,8 @@ function TjansterPage() {
               <span className={classes.read_more}>
                 Se varför smartlås är så smarta
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <path d="M16.835 6.91846L23.9166 14.0001L16.835 21.0818" stroke="#0047C7" stroke-width="1.85" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4.08301 14H23.718" stroke="#0047C7" stroke-width="1.85" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.835 6.91846L23.9166 14.0001L16.835 21.0818" stroke="#0047C7" strokeWidth="1.85" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4.08301 14H23.718" stroke="#0047C7" strokeWidth="1.85" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
                 </span>
             </Link>
@@ -90,14 +90,14 @@ function TjansterPage() {
 
           <div className={classes.contact}>
             <h2>Tveka inte att kontakta oss med era frågor</h2>
-            <p>08-121 541 88</p>
+            <Link href="tel:+46700126667"><p>070-012-66-67</p></Link>
             <p>info@nylas.se</p>
           </div>
         </div>
 
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <Image src="/placerholder_keyman.svg" fill alt="låssmed" />
+            <Image src="/placerholder_keyman.svg" fill alt="låssmed" priority={false} placeholder = 'empty'/>
           </div>
         </div>
       </div>
