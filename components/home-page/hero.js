@@ -7,13 +7,14 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div>
+    <div style={{position: "relative",}}>
       <Image
       alt="bakgrund-hus"
       src="/background/background_desktop_s.webp"
       quality={100}
       fill
       sizes="100vh"
+      priority={true}
       style={{
         objectFit: 'cover',
         zIndex: '-20',

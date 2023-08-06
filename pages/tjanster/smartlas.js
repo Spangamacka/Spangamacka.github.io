@@ -1,5 +1,7 @@
 import classes from "./smartlas.module.css";
 import Image from "next/image";
+import Link from 'next/link';
+import ActionButton from "../../components/buttons/button-solid.js";
 
 function SmartlasPage() {
   return (
@@ -18,6 +20,7 @@ function SmartlasPage() {
             vänner, medan den robusta designen ger pålitligt skydd mot inbrott
             och obehörig åtkomst.
           </p>
+          <h2>Ring oss så berättar vi mer: <Link href="tel:+46700126667">070-012 66 67</Link></h2>
           <div className={classes.second_section}>
             <h2>Yale doorman: Upplev Smidigheten med kodlås</h2>
 
@@ -159,6 +162,9 @@ function SmartlasPage() {
               </li>
             </ul>
           </div>
+          <Link href="/kontakt">
+            <ActionButton text="Kontakta oss" />
+            </Link>
         </div>
         <div className={classes.image_container}>
           <div className={classes.image_holder}>

@@ -18,8 +18,8 @@ function TjansterPage() {
             <h2>Låsöppning</h2>
             <p>
               Nylås hjälper tryggt och enkelt till med låsöppningar. Är du
-              utelåst eller har tappat en nyckel kan vår låsjour i Stockholm
-              hjälpa dig säkert på plats inom 30 minuter.
+              utelåst eller har tappat en nyckel kan så kan vi på nylås hjälpa dig, och 
+              vi har även en låsjour så att vi kan hjälpa dig när det behövs.
             </p>
             <Link href="/tjanster/lasoppning">
               <span className={classes.read_more}>

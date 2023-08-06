@@ -3,6 +3,7 @@
     padding-top: 9rem;
 }
 
+
 .container h1 {
     line-height: 1.2;
     font-weight: 700;
@@ -35,6 +36,14 @@
 .second_section {
     margin-top: 4rem;
     margin-bottom: 2rem;
+}
+
+.lasjourbox {
+    padding-top: 1rem;
+}
+
+.lasjourbox a{
+    text-decoration: none;
 }
 
 .font_color {

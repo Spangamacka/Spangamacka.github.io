@@ -88,13 +88,6 @@
     
 }
 
-.visually_hidden {
-    display: none;
-}
-
-
-/* Navbar overlay test*/ 
-
 .layover {
     position: fixed;
     inset: 0px;
@@ -154,4 +147,20 @@
     font-weight: 400;
     color: white;
     margin: 1rem;
+}
+
+.nav_mobile_linkhold {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+}
+
+.nav_mobile_linkhold a{
+    font-size: 1.30rem;
+}
+
+.internal_link a{
+    font-weight: 400;
+    font-size: 1.1rem;
+
 }

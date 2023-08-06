@@ -1,5 +1,6 @@
 import classes from "./kontakt.module.css";
 import Image from 'next/image';
+import Link from 'next/link';
 
 function KontaktPage() {
   return (
@@ -13,7 +14,7 @@ function KontaktPage() {
           </p>
           <div className={classes.contact}>
             <h2>Tveka inte att kontakta oss med era frågor</h2>
-            <p>070-012 66 67</p>
+            <Link href="tel:+46700126667"><p>070-012-66-67</p></Link>
             <p>info@nylas.se</p>
           </div>
           <div className={classes.second_section}>

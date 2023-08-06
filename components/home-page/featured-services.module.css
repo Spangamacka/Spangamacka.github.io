@@ -1,209 +1,206 @@
-
 .container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--clr-background-blue);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-background-blue);
 }
 
 .container a {
-    text-decoration: none;
-    color: var(--clr-primary);
+  text-decoration: none;
+  color: var(--clr-primary);
 }
 
 .service_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--clr-primary);
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 1rem;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-primary);
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .cards_holder {
-    
-    max-width: 1200px;
-    display: grid;
-    margin:0;
-    gap: 0.5rem;
+  max-width: 1200px;
+  display: grid;
+  margin: 0;
+  gap: 0.5rem;
 }
 
 .text {
-    max-width: 30rem;
-    
+  max-width: 30rem;
 }
 
 .btn_holder_desktop {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
- /* Temporary Feature card css */
+/* Temporary Feature card css */
 
- .cardContainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 20rem;
-    max-height: 19rem;
-    padding: 1.5rem;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  max-height: 19rem;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .quickInfo p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .quickInfo h2 {
-    color: var(--clr-primary);
-    display: flex;
+  color: var(--clr-primary);
+  display: flex;
 }
 
 .cardButton {
-    display: flex;
-    justify-content: right;
-    margin-top: 1.65rem;
-    position: relative;
+  display: flex;
+  justify-content: right;
+  margin-top: 1.65rem;
+  position: relative;
 }
 
 .feature_title {
-    color: var(--clr-primary);
+  color: var(--clr-primary);
 }
 
 .cardContainer_mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 20rem;
-    max-height: 19rem;
-    padding: 1.5rem;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 20rem;
+  max-height: 19rem;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .image {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-
 .card_grid_holder {
-    display: flex;
-    justify-content: center;
-    background-color: var(--clr-background-blue);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-background-blue);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .image_holder {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-  
+  position: relative;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .key_image_holder {
-    position: relative;
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    margin-bottom: -1.75rem;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: -1.75rem;
 }
 
 .image_holder_smartlock {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .separator {
-    
-    margin-top: 2rem;
-    width: 100%;
-    height: 5rem;
-    background-color: white;
+  margin-top: 2rem;
+  width: 100%;
+  height: 5rem;
+  background-color: white;
+}
+
+.relativePos {
+  position: relative;
 }
 
 @media (max-width: 710px) {
-    .quickInfo {
-        visibility: hidden;
-        display: none;
-    }
+  .quickInfo {
+    visibility: hidden;
+    display: none;
+  }
 
-    .btn_holder_desktop {
-        visibility: hidden;
-        display: none;
-    }
+  .btn_holder_desktop {
+    visibility: hidden;
+    display: none;
+  }
 
-    .cardContainer {
-        align-items: center;
-        min-width: 8rem;
-    }
+  .cardContainer {
+    align-items: center;
+    min-width: 8rem;
+  }
 
-    .cardContainer_mobile {
-        align-items: center;
-    }
+  .cardContainer_mobile {
+    align-items: center;
+  }
 
-    .feature_title {
-        font-size: 0.65rem;
-        display: flex;
-        justify-content: center;
-    }
-    
+  .feature_title {
+    font-size: 0.65rem;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-
 @media (max-width: 70rem) {
-    .cards_holder {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-    }
+  .cards_holder {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
 
-    .image_holder {
-        width: 75px;
-        height: 75px;
-        margin-bottom: 1rem;
-    }
+  .image_holder {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 1rem;
+  }
 
-    .key_image_holder {
-        position: relative;
-        width: 90px;
-        height: 90px;
-        object-fit: contain;
-        margin: 1px;
-    }
+  .key_image_holder {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin: 1px;
+  }
 
-    .image_holder_smartlock {
-        width: 75px;
-        height: 75px;
-        margin-left: 1.75rem;
-        margin-bottom: 1rem;
-    }
+  .image_holder_smartlock {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin-left: 1.75rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (min-width: 1050px) {
-    .cards_holder {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .cards_holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .cardContainer_mobile {
-        visibility: hidden;
-        display: none;
-    }
+  .cardContainer_mobile {
+    visibility: hidden;
+    display: none;
+  }
 }
-

@@ -3,6 +3,7 @@ import Image from "next/image";
 import ActionButton from "../../components/buttons/button-solid.js";
 import Link from 'next/link';
 
+
 function LasbytePage() {
   return (
     <div className={classes.container}>
@@ -20,6 +21,7 @@ function LasbytePage() {
             prioriteten, så därför använder vi bara certifierade lås  Kontakta
             oss för mer information! 
           </p>
+          <h2>Ni når oss på: <Link href="tel:+46700126667">070-012 66 67</Link></h2>
           <div className={classes.second_section}>
           <h2>Checklista för låsbyte. När ska du byta lås?</h2>
           <p>
@@ -96,7 +98,7 @@ function LasbytePage() {
           </p>
           </div>
           
-          <Link href="/kontakta-oss">
+          <Link href="/kontakt">
             <ActionButton text="Kontakta oss" />
             </Link>
         </div>

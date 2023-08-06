@@ -21,16 +21,24 @@ function FeaturedServices() {
       <div className={classes.card_grid_holder}>
         <div className={classes.cards_holder}>
           <div className={classes.cardContainer}>
-            <div>
+            <div className={classes.relativePos}>
               <div className={classes.key_image_holder}>
-              <Link href="/tjanster/lasbyte">
-                <Image src="/icons/key_icon_m.svg" fill alt="key_icon" />
+                <Link href="/tjanster/lasbyte">
+                  <div
+                    style={{
+                      width: "130px",
+                      height: "130px",
+                      position: "relative",
+                    }}
+                  >
+                    <Image src="/icons/key_icon_m.svg" fill alt="key_icon" />
+                  </div>
                 </Link>
               </div>
 
               <div className={classes.feature_title}>
-              <Link href="/tjanster/lasbyte">
-                <h2>Låsbyte</h2>
+                <Link href="/tjanster/lasbyte">
+                  <h2>Låsbyte</h2>
                 </Link>
               </div>
             </div>
@@ -41,7 +49,7 @@ function FeaturedServices() {
                 genom skräddarsydda lösningar just för dig eller ditt företag.
               </p>
               <div className={classes.cardButton}>
-              <Link href="/tjanster/lasbyte">
+                <Link href="/tjanster/lasbyte">
                   <ActionButtonCard text="Läs mer" />
                 </Link>
               </div>
@@ -50,17 +58,25 @@ function FeaturedServices() {
           <div className={classes.cardContainer}>
             <div>
               <div className={classes.image_holder}>
-              <Link href="/tjanster/lasoppning">
-                <Image
-                  src="/icons/openlock_icon.svg"
-                  fill
-                  alt="låsöppning_icon"
-                />
+                <Link href="/tjanster/lasoppning">
+                  <div
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      position: "relative",
+                    }}
+                  >
+                    <Image
+                      src="/icons/openlock_icon.svg"
+                      fill
+                      alt="låsöppning_icon"
+                    />
+                  </div>
                 </Link>
               </div>
               <div className={classes.feature_title}>
-              <Link href="/tjanster/lasoppning">
-                <h2>Låsöppning</h2>
+                <Link href="/tjanster/lasoppning">
+                  <h2>Låsöppning</h2>
                 </Link>
               </div>
             </div>
@@ -71,7 +87,7 @@ function FeaturedServices() {
                 hjälper vår låsjour i stockholm snabbt till vid akuta ärenden.
               </p>
               <div className={classes.cardButton}>
-              <Link href="/tjanster/lasoppning">
+                <Link href="/tjanster/lasoppning">
                   <ActionButtonCard text="Läs mer" />
                 </Link>
               </div>
@@ -80,14 +96,26 @@ function FeaturedServices() {
           <div className={classes.cardContainer}>
             <div>
               <div className={classes.image_holder_smartlock}>
-              <Link href="/tjanster/smartlas">
-                <Image src="/icons/smartlock_icon.svg" fill alt="key_icon" />
+                <Link href="/tjanster/smartlas">
+                  <div
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      position: "relative",
+                    }}
+                  >
+                    <Image
+                      src="/icons/smartlock_icon.svg"
+                      fill
+                      alt="key_icon"
+                    />
+                  </div>
                 </Link>
               </div>
 
               <div className={classes.feature_title}>
-              <Link href="/tjanster/smartlas">
-                <h2>Smartlås</h2>
+                <Link href="/tjanster/smartlas">
+                  <h2>Smartlås</h2>
                 </Link>
               </div>
             </div>
@@ -104,7 +132,6 @@ function FeaturedServices() {
               </div>
             </div>
           </div>
-
 
           <div className={classes.cardContainer_mobile}>
             <Link href="/tjanster">
@@ -125,12 +152,12 @@ function FeaturedServices() {
       </div>
 
       <div className={classes.btn_holder_desktop}>
-      <Link href="/tjanster">
-                  <ActionButton text="Se allt vi gör" />
-                </Link>
+        <Link href="/tjanster">
+          <ActionButton text="Se allt vi gör" />
+        </Link>
       </div>
 
-     <div className={classes.separator}></div>
+      <div className={classes.separator}></div>
     </div>
   );
 }

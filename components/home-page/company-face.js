@@ -21,6 +21,7 @@ function CompanyFace() {
       <div className={classes.background_holder}>
         <Image
           src="/background-stockholm.webp"
+          alt="villa-husdörr"
           quality={100}
           fill
           sizes="100vw"
