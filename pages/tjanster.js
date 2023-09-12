@@ -1,6 +1,8 @@
 import classes from "./tjanster.module.css";
 import Link from "next/link";
 import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
+import placeHolderMan from 'public/placerholder_keyman.svg';
 
 function TjansterPage() {
   return (
@@ -9,7 +11,7 @@ function TjansterPage() {
         <div>
           <h1>Det här gör vi på Nylås</h1>
           <p>
-            Vi skapar säkra och skräddarsydda lösningar för privatpersoner,
+            Vi skapar säkra och effektiva lösningar för privatpersoner,
             bolag och bostadsrättsföreningar. Vare sig du har blivit utelåst
             eller vill få det senaste kodlåset monterat.
           </p>
@@ -56,7 +58,7 @@ function TjansterPage() {
             <h2>Låsbyte</h2>
             <p>
               Vi byter och installerar låscylinder, och kan också installera
-              smartalås till din dörr. Lösningen kommer att skräddarsys efter
+              smartalås till din dörr. Lösningen kommer utföras efter
               dina behov för att göra det både tryggt & prisvärt. Din säkerhet
               är prioriteten, så därför använder vi bara certifierade lås.
             </p>
@@ -90,14 +92,16 @@ function TjansterPage() {
 
           <div className={classes.contact}>
             <h2>Tveka inte att kontakta oss med era frågor</h2>
-            <Link href="tel:+46700126667"><p>070-012-66-67</p></Link>
-            <p>info@nylas.se</p>
+            <Link href="tel:+468306667"><p>08-30 66 67</p></Link>
+            <Link href="mailto:info@nylas.se"><p>info@nylas.se</p></Link>
+            <h2>För akuta ärenden dygnet runt kontakta oss på</h2>
+            <Link href="tel:+46812154188"><p>08-121 541 88</p></Link>
           </div>
         </div>
 
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <Image src="/placerholder_keyman.svg" fill alt="låssmed" priority={false} placeholder = 'empty'/>
+            <ExportedImage src={placeHolderMan} fill alt="låssmed" priority={false} placeholder = 'empty'unoptimized={true} placeholder="empty"/>
           </div>
         </div>
       </div>

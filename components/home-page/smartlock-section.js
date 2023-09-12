@@ -2,17 +2,22 @@ import classes from "./smartlock-section.module.css";
 import ActionButton from "../buttons/button-solid.js";
 import Image from "next/image";
 import Link from "next/link";
+import ExportedImage from "next-image-export-optimizer";
+import keyTag from 'public/icons/keytag_icon.svg';
+import mobileIcon from 'public/icons/mobile_icon.svg';
+import deliveryIcon from 'public/icons/delivery_icon.svg';
+import alarmLight from 'public//icons/alarm_light_icon.svg';
 
 function SmartLockSection() {
   return (
     <div className={classes.container}>
       <div className={classes.even_columns}>
         <div>
-          <h1>Upplev smidigheten med Yale doorman</h1>
-          <h2>
+          <h2>Upplev smidigheten med Yale doorman.</h2>
+          <h3>
             Nyfiken på smarta lås? Låt oss installera er nästa allt-i-ett
             säkerhetslösning för ditt företag eller hem
-          </h2>
+          </h3>
           <p className={classes.smartlock_text}>
             Yale Doorman smarta lås erbjuder enastående bekvämligheter och
             säkerhet för ditt hem. Med dess intuitiva touch-skärm och
@@ -35,8 +40,8 @@ function SmartLockSection() {
             <ActionButton text="Kontakta oss" />
             </Link>
             <div className={classes.mobile_feature_text}>
-              <h1>Yale doorman L3S</h1>
-              <p>Låsklass 3 med smarta funktioner</p>
+              <h2>Yale doorman L3S</h2>
+              <h3>Låsklass 3 med smarta funktioner</h3>
             </div>
           </div>
         </div>
@@ -45,8 +50,10 @@ function SmartLockSection() {
         <div className={classes.features}>
           <div className={classes.feature_item}>
             <div className={classes.iconHolder}>
-              <Image
-                src="/icons/keytag_icon.svg"
+              <ExportedImage
+              placeholder="empty"
+                unoptimized={true}
+                src={keyTag}
                 width={65}
                 height={65}
                 alt="key_icon"
@@ -58,8 +65,10 @@ function SmartLockSection() {
           </div>
           <div className={classes.feature_item}>
             <div className={classes.iconHolder}>
-              <Image
-                src="/icons/mobile_icon.svg"
+              <ExportedImage
+              placeholder="empty"
+              unoptimized={true}
+                src={mobileIcon}
                 width={65}
                 height={65}
                 alt="key_icon"
@@ -73,8 +82,10 @@ function SmartLockSection() {
           </div>
           <div className={classes.feature_item}>
             <div className={classes.iconHolder}>
-              <Image
-                src="/icons/delivery_icon.svg"
+              <ExportedImage
+              placeholder="empty"
+              unoptimized={true}
+                src={deliveryIcon}
                 width={65}
                 height={65}
                 alt="key_icon"
@@ -86,15 +97,18 @@ function SmartLockSection() {
           </div>
           <div className={classes.feature_item}>
             <div className={classes.iconHolder}>
-              <Image
-                src="/icons/alarm_light_icon.svg"
+              <ExportedImage
+              placeholder="empty"
+              unoptimized={true}
+                src={alarmLight}
                 width={65}
                 height={65}
                 alt="key_icon"
               />
             </div>
             <div className={classes.featureInfoHolder}>
-              <p>Inbyggd dörrklocka direkt i låsets funktioner</p>
+              <p>Inbyggd dörrklocka direkt i låsets funktioner*</p>
+              <span className={classes.featureInfoSmallText}>*Gäller enbart Doorman L3</span>
             </div>
           </div>
         

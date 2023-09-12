@@ -5,12 +5,18 @@ import LasjourInfobox from "../lasjourInfobox.js";
 import Image from "next/image";
 import Link from "next/link";
 
+import ExportedImage from 'next-image-export-optimizer';
+import bakgrundHus from 'public/background/background_desktop_s.webp';
+
+
 function Hero() {
   return (
     <div style={{position: "relative",}}>
-      <Image
+      <ExportedImage
+      placeholder="empty"
+      unoptimized={true}
       alt="bakgrund-hus"
-      src="/background/background_desktop_s.webp"
+      src={bakgrundHus}
       quality={100}
       fill
       sizes="100vh"
@@ -31,13 +37,13 @@ function Hero() {
         <div className={classes.container}>
           <div className={classes.even_columns}>
             <div className={classes.flow}>
-              <h1>Från digitala lås till låsbyte - Din låssmed i Stockholm</h1>
+              <h1>Från digitala lås till låsbyte - Din låssmed i Stockholm.</h1>
               
                 <p>
                   Välkommen till Nylås, din låssmed i Stockholm med koll på allt
                   från låscylinder till smarta lås. Vi skapar säkra och
-                  skräddarsydda lösningar för privatpersoner, bolag och
-                  bostadsrättsföreningar. Vare sig du ska montera traditionella
+                  effektiva lösningar för privatpersoner, bolag och
+                  bostadsrättsföreningar. Vare sig du ska montera mekaniska
                   lås eller vill få det senaste kodlåset monterat.
                 </p>
           
@@ -58,13 +64,14 @@ function Hero() {
               
               <div className={classes.lasjourInfo}>
               <div className={classes.contact_prompt}>
-                <span className={classes.contact_prompt_item}>Några funderingar? Hör av er</span>
+                <span className={classes.contact_prompt_item}>Vid frågor eller tidsbokning dagtid</span>
+                <span className={classes.contact_prompt_item}>kontakta oss på</span>
                 <div className={classes.phone_number}>
-                <span><Link href="tel:+46700126667">070-012 66 67</Link></span>
+                <span><Link href="tel:+468306667">08-30 66 67</Link></span>
                 </div>
               </div>
              
-                <h3>Akut utelåst? Kontakta vår låsjour så hjälper vi dig.</h3>
+                <h3>Vid akuta ärenden kontakta oss dygnet runt på</h3>
                 <div className={classes.lasjourbox}>
                   <Link href="https://www.xn--stockholmlsjour-qlb.se/">
                     <LasjourInfobox />

@@ -1,6 +1,7 @@
 import classes from "./bibliotek.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 function Bibliotek() {
   return (
@@ -59,7 +60,7 @@ function Bibliotek() {
               och säkerhet och vi gör vårt bästa för att kunna ge så bra svar
               som möjligt.
             </p>
-            <Link href="tjanster/lasbyte">
+            <Link href="/tjanster/lasbyte">
               <span className={classes.read_more}>
                 Läs mer om låsbyten
                 <svg
@@ -129,14 +130,14 @@ function Bibliotek() {
 
           <div className={classes.contact}>
             <h2>Tveka inte att kontakta oss med era frågor</h2>
-            <Link href="tel:+46700126667"><p>070-012-66-67</p></Link>
-            <p>info@nylas.se</p>
+            <Link href="tel:+468306667"><p>08-30 66 67</p></Link>
+            <Link href="mailto:info@nylas.se"><p>info@nylas.se</p></Link>
           </div>
         </div>
 
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <Image src="/bibliotek/learning.webp" fill alt="lära-sig-om-lås" />
+            <ExportedImage src="/bibliotek/learning.webp" fill alt="lära-sig-om-lås" placeholder="empty" unoptimized={true}/>
           </div>
         </div>
       </div>

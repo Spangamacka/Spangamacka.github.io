@@ -46,7 +46,7 @@
 }
 
 .lasjourInfo h3 {
-  max-width: 14rem;
+  max-width: 15rem;
 }
 
 .contact_prompt {
@@ -59,22 +59,32 @@
 .contact_prompt_item {
   font-size: 1.2rem;
   font-weight: 600;
+  
 }
 
 .phone_number {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   display: flex;
   font-weight: 700;
   max-width: 13rem;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: 0.5rem;
-  background: rgb(255, 255, 255);
-  border: 1px solid white;
+  text-shadow:
+        0.04em 0 black,
+        0 0.04em black,
+        -0.04em 0 black,
+        0 -0.04em black,
+        -0.04em -0.04em black,
+        -0.04em 0.04em black,
+        0.04em -0.04em black,
+        0.04em 0.04em black;
+ 
 }
 
 .phone_number a {
   text-decoration: none;
-  color: var(--clr-primary);
+  color: white;
+  
 }
 
 @media (min-width: 61em) {
@@ -118,6 +128,7 @@
   .contact_prompt {
     justify-content: center;
     align-items: center;
+    
   }
 
   .heroImage {

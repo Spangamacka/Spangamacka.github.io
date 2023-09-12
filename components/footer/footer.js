@@ -2,6 +2,9 @@ import classes from "./footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+import ExportedImage from "next-image-export-optimizer";
+import whiteLogoStockholm from 'public/logo/logo_white.svg';
+
 import { Red_Hat_Display } from "next/font/google";
 const redhatdisplay = Red_Hat_Display({
   subsets: ["latin"],
@@ -18,8 +21,10 @@ function Footer() {
               <i className={classes.fab_faslack}></i>
               <span>
                 <Link href="/">
-                  <Image
-                    src="/logo/logo_white.svg"
+                  <ExportedImage
+                  placeholder="empty"
+                    unoptimized={true}
+                    src={whiteLogoStockholm}
                     width={90}
                     height={35}
                     quality={100}
@@ -35,10 +40,10 @@ function Footer() {
                 <span className={classes.heading}>Företag</span>
               </li>
               <li>
-              <Link href="#">info@nylas.se</Link>
+              <Link href="mailto:info@nylas.se">info@nylas.se</Link>
               </li>
               <li>
-                <Link href="#">070-012 66 67</Link>
+                <Link href="tel:+468306667">08-30 66 67</Link>
               </li>
               <li>
                 <Link href="/om-oss">Om oss</Link>
@@ -88,8 +93,9 @@ function Footer() {
         <div className={classes.bottom_details}>
           <div className={classes.bottom_text}>
             <span className={classes.copyright_text}>
-              Copyright © 2023 <Link href="#">Nylås.</Link>
+              Copyright © 2023 <Link href="/">Nylås.</Link>
             </span>
+            <span>Nylås AB, 559116-3802</span>
           </div>
         </div>
       </footer>

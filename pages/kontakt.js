@@ -1,6 +1,8 @@
 import classes from "./kontakt.module.css";
 import Image from 'next/image';
 import Link from 'next/link';
+import ExportedImage from "next-image-export-optimizer";
+import kontaktLokal from 'public/kontakt/kontakt_lokal.webp';
 
 function KontaktPage() {
   return (
@@ -14,8 +16,11 @@ function KontaktPage() {
           </p>
           <div className={classes.contact}>
             <h2>Tveka inte att kontakta oss med era frågor</h2>
-            <Link href="tel:+46700126667"><p>070-012-66-67</p></Link>
-            <p>info@nylas.se</p>
+            <p className={classes.innerTextInfo}>För tidsbokning eller frågor dagtid</p>
+            <Link href="tel:+468306667"><p>08-30 66 67</p></Link>
+            <Link href="mailto:info@nylas.se"><p>info@nylas.se</p></Link>
+            <p className={classes.innerTextInfo}>Vid akuta ärenden dygnet runt</p>
+            <Link href="tel:+46812154188"><p>08-121 541 88</p></Link>
           </div>
           <div className={classes.second_section}>
             <h2>Vi finns i hela Stockholm</h2>
@@ -27,7 +32,7 @@ function KontaktPage() {
         
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <Image src="/kontakt/placeholder_kontakt.webp" fill alt="kontakta-oss" />
+            <ExportedImage src={kontaktLokal} fill alt="kontakta-oss" unoptimized={true} placeholder="empty"/>
           </div>
         </div>
       </div>

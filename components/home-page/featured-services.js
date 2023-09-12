@@ -5,6 +5,12 @@ import ActionButtonCard from "../buttons/button-card.js";
 import Image from "next/image";
 import Link from "next/link";
 
+import ExportedImage from "next-image-export-optimizer";
+import keyIcon from 'public/icons/key_icon_m.svg';
+import openLock from 'public/icons/openlock_icon.svg';
+import smartLock from 'public/icons/smartlock_icon.svg';
+import arrowRight from 'public/icons/arrow-right.svg';
+
 function FeaturedServices() {
   return (
     <div className={classes.container}>
@@ -31,12 +37,12 @@ function FeaturedServices() {
                       position: "relative",
                     }}
                   >
-                    <Image src="/icons/key_icon_m.svg" fill alt="key_icon" />
+                    <ExportedImage src={keyIcon} fill alt="key_icon" unoptimized={true} placeholder="empty"/>
                   </div>
                 </Link>
               </div>
 
-              <div className={classes.feature_title}>
+              <div className={classes.feature_title_B}>
                 <Link href="/tjanster/lasbyte">
                   <h2>Låsbyte</h2>
                 </Link>
@@ -57,7 +63,7 @@ function FeaturedServices() {
           </div>
           <div className={classes.cardContainer}>
             <div>
-              <div className={classes.image_holder}>
+              <div className={classes.padlock_image_holder}>
                 <Link href="/tjanster/lasoppning">
                   <div
                     style={{
@@ -66,8 +72,10 @@ function FeaturedServices() {
                       position: "relative",
                     }}
                   >
-                    <Image
-                      src="/icons/openlock_icon.svg"
+                    <ExportedImage
+                    placeholder="empty"
+                      unoptimized={true}
+                      src={openLock}
                       fill
                       alt="låsöppning_icon"
                     />
@@ -104,8 +112,10 @@ function FeaturedServices() {
                       position: "relative",
                     }}
                   >
-                    <Image
-                      src="/icons/smartlock_icon.svg"
+                    <ExportedImage
+                    placeholder="empty"
+                    unoptimized={true}
+                      src={smartLock}
                       fill
                       alt="key_icon"
                     />
@@ -136,8 +146,10 @@ function FeaturedServices() {
           <div className={classes.cardContainer_mobile}>
             <Link href="/tjanster">
               <div className={classes.image}>
-                <Image
-                  src="/icons/arrow-right.svg"
+                <ExportedImage
+                placeholder="empty"
+                unoptimized={true}
+                  src={arrowRight}
                   width={75}
                   height={75}
                   alt="arrow-icon"

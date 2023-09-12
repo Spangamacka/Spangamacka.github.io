@@ -151,6 +151,7 @@
 
   .cardContainer {
     align-items: center;
+   
     min-width: 8rem;
   }
 
@@ -163,6 +164,13 @@
     display: flex;
     justify-content: center;
   }
+
+  .feature_title_B {
+    font-size: 0.65rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.82rem;
+  }
 }
 
 @media (max-width: 70rem) {
@@ -171,24 +179,20 @@
     gap: 0.5rem;
   }
 
-  .image_holder {
-    width: 75px;
-    height: 75px;
+  .padlock_image_holder {
+    position: relative;
     margin-bottom: 1rem;
   }
 
   .key_image_holder {
     position: relative;
-    width: 90px;
-    height: 90px;
     object-fit: contain;
-    margin: 1px;
+
   }
 
   .image_holder_smartlock {
     position: relative;
-    width: 75px;
-    height: 75px;
+
     margin-left: 1.75rem;
     margin-bottom: 1rem;
   }

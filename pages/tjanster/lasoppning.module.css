@@ -59,8 +59,8 @@
 
 .image_holder {
     position: relative;
-    width: 275px;
-    height: 275px;
+    width: 325px;
+    height: 325px;
     object-fit: contain;
   
 }
@@ -68,7 +68,8 @@
 
     .image_holder {
         position: relative;
-        width: 600px;
+        margin-top: 1.3rem;
+        width: 550px;
         height: 600px;
         object-fit: contain;
       

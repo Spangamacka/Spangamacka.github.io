@@ -2,6 +2,8 @@ import classes from "./lasoppning.module.css";
 import Image from "next/image";
 import LasjourInfobox from "../../components/lasjourInfobox.js";
 import Link from 'next/link';
+import ExportedImage from "next-image-export-optimizer";
+import opendoor from 'public/lasoppning/opendoorM.jpg';
 
 function LasoppningPage() {
   return (
@@ -12,9 +14,7 @@ function LasoppningPage() {
           <p>
             Har du blivit utelåst från lägenheten eller villan? Dörren gick i
             baklås eller nyckeln försvann på den där festen.  Oavsett vilket så
-            vill du in till hemmets värme och din sköna säng. Och helst utan att
-            hela dörren ska gå till dom sälla jaktmarkerna för att det ska
-            hända. 
+            vill du in till hemmets värme och din sköna säng.
           </p>
           <div className={classes.second_section}>
             <h2>
@@ -22,7 +22,7 @@ function LasoppningPage() {
               <div></div>
               <span className={classes.font_color}>
                 {" "}
-                Ring oss på: <Link href="tel:+46700126667">070-012 66 67</Link>
+                Ring oss på: <Link href="tel:+468306667">08-30 66 67</Link>
               </span>
             </h2>
             <p>
@@ -49,8 +49,10 @@ function LasoppningPage() {
         </div>
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <Image
-              src="/lasoppning/lasoppning_img.webp"
+            <ExportedImage
+            placeholder="empty"
+              unoptimized={true}
+              src={opendoor}
               fill
               alt="låsöppning-i-arbete"
             />

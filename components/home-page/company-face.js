@@ -1,5 +1,7 @@
 import classes from "./company-face.module.css";
 import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import stockholmOverview from 'public/background/background-stockholm.webp';
 
 function CompanyFace() {
   return (
@@ -12,15 +14,17 @@ function CompanyFace() {
             Vi byter lås, monterar och sköter låsöppning för både privatpersoner
             och företag. Vi värdesätter en tydlig kommunikation om tid,
             utförande och kostnad. Ett tydligt upplägg och skickligt utförande
-            är hur vi bedriver vår verksamhet. tveka inte att kontakta oss för
+            är hur vi bedriver vår verksamhet. Tveka inte att kontakta oss för
             ett snabbt och kvalitativt utförande!
           </p>
         </div>
       </div>
 
       <div className={classes.background_holder}>
-        <Image
-          src="/background-stockholm.webp"
+        <ExportedImage
+        placeholder="empty"
+          unoptimized={true}
+          src={stockholmOverview}
           alt="villa-husdörr"
           quality={100}
           fill

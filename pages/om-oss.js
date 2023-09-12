@@ -1,5 +1,7 @@
 import classes from './om-oss.module.css';
 import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
+import placeholderPersonalNarrow from 'public/placeholder_personal_narrow.svg'
 
 function OmOssPage() {
     return (
@@ -8,7 +10,7 @@ function OmOssPage() {
         <div>
           <h1>Vi är Nylås</h1>
           <p>
-            Vi är en låssmed med låsjour baserad i Stockholm som ständigt strävar efter
+            Vi är en låssmed som utför låsbyten, låsöppningar och installation av smarta lås och vi har även låsjour dygnet runt. Vi är baserade i Stockholm och strävar ständigt efter
             att uföra säkra och effektiva jobb.
           </p>
 
@@ -28,8 +30,11 @@ function OmOssPage() {
         </div>
         <div className={classes.image_container}>
         <div className={classes.image_holder}>
-                <Image
-                  src="/placeholder_personal_narrow.svg"
+                <ExportedImage
+                  priority
+                  placeholder="empty"
+                  unoptimized={true}
+                  src={placeholderPersonalNarrow}
                   fill
                   alt="vi-som-jobbar-på-nylås"
                 />

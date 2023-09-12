@@ -2,6 +2,10 @@ import classes from "./lasbyte.module.css";
 import Image from "next/image";
 import ActionButton from "../../components/buttons/button-solid.js";
 import Link from 'next/link';
+import ExportedImage from "next-image-export-optimizer";
+import bulletpointDark from 'public/icons/bullet_point_dark.svg';
+import lasbytemid from 'public/lasbyte/opendoormid.jpg';
+import lasbytefull from 'public/lasbyte/opendoorchange.jpg';
 
 
 function LasbytePage() {
@@ -12,7 +16,7 @@ function LasbytePage() {
           <h1>Dags att byta lås på ytterdörren? Vi fixar låsbytet. </h1>
           <p>
             Är du Stockholmsbaserad och ska byta lås på ytterdörren eller annan
-            dörr i hemmet så finns våra auktoriserade låssmeder här för dig.  Vi
+            dörr i hemmet så finns våra låssmeder här för dig.  Vi
             vet vikten av ett bra lås och med våra erfarna låssmeder ser vi till
             att ert nya lås ger er tryggheten som kommer med ett säkert hem.  Vi
             byter och installerar låscylinder, och kan också installera
@@ -21,7 +25,7 @@ function LasbytePage() {
             prioriteten, så därför använder vi bara certifierade lås  Kontakta
             oss för mer information! 
           </p>
-          <h2>Ni når oss på: <Link href="tel:+46700126667">070-012 66 67</Link></h2>
+          <h2>Ni når oss på: <Link href="tel:+468306667">08-30 66 67</Link></h2>
           <div className={classes.second_section}>
           <h2>Checklista för låsbyte. När ska du byta lås?</h2>
           <p>
@@ -32,8 +36,10 @@ function LasbytePage() {
           <ul>
             <li>
               <span className={classes.bullet_point}>
-                <Image
-                  src="/icons/bullet_point_dark.svg"
+                <ExportedImage
+                placeholder="empty"
+                unoptimized={true}
+                  src={bulletpointDark}
                   width={25}
                   height={25}
                   alt="bullet-point"
@@ -47,8 +53,10 @@ function LasbytePage() {
             </li>
             <li>
               <span className={classes.bullet_point}>
-                <Image
-                  src="/icons/bullet_point_dark.svg"
+                <ExportedImage
+                placeholder="empty"
+                unoptimized={true}
+                  src={bulletpointDark}
                   width={25}
                   height={25}
                   alt="bullet-point"
@@ -62,8 +70,10 @@ function LasbytePage() {
             </li>
             <li>
               <span className={classes.bullet_point}>
-                <Image
-                  src="/icons/bullet_point_dark.svg"
+                <ExportedImage
+                unoptimized={true}
+                placeholder="empty"
+                  src={bulletpointDark}
                   width={25}
                   height={25}
                   alt="bullet-point"
@@ -77,8 +87,10 @@ function LasbytePage() {
             </li>
             <li>
               <span className={classes.bullet_point}>
-                <Image
-                  src="/icons/bullet_point_dark.svg"
+                <ExportedImage
+                placeholder="empty"
+                unoptimized={true}
+                  src={bulletpointDark}
                   width={25}
                   height={25}
                   alt="bullet-point"
@@ -104,7 +116,10 @@ function LasbytePage() {
         </div>
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <Image src="/lasbyte/lasbyte_full.webp" fill alt="låsöppning-i-arbete" />
+            <ExportedImage placeholder="empty" unoptimized={true} src={lasbytefull} fill alt="låsöppning-i-arbete" />
+          </div>
+          <div className={classes.image_holder}>
+            <ExportedImage placeholder="empty" unoptimized={true} src={lasbytemid} fill alt="låsöppning-i-arbete" />
           </div>
         </div>
       </div>

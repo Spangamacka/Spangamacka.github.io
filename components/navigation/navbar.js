@@ -5,6 +5,10 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
+import ExportedImage from "next-image-export-optimizer";
+import nylasLogo from 'public/logo/NylåsLogo.svg';
+import hamburgerIcon from 'public/icons/icon-hamburger.svg';
+
 import { Red_Hat_Display } from "next/font/google";
 const redhatdisplay = Red_Hat_Display({
   subsets: ["latin"],
@@ -79,8 +83,10 @@ function Navbar() {
         <div className={classes.container}>
           <div className={classes.nav_wrapper}>
             <Link href="/">
-              <Image
-                src="/logo/NylåsLogo.svg"
+              <ExportedImage
+                placeholder="empty"
+                unoptimized={true}
+                src={nylasLogo}
                 width={90}
                 height={35}
                 quality={100}
@@ -93,16 +99,16 @@ function Navbar() {
               onClick={handleClick}
               aria-controls="primary-navigation"
             >
-              <img
-                className={classes.icon_hamburger}
-                src="/icons/icon-hamburger.svg"
-                alt="icon-hamburger"
+              <ExportedImage
+                placeholder="empty"
+                unoptimized={true}
+                src={hamburgerIcon}
+                width={32}
+                height={32}
+                quality={100}
+                alt="hamburger-icon"
               />
-              <img
-                className={classes.icon_close}
-                src="/icons/icon-close.svg"
-                alt="icon-close"
-              />
+              
             </button>
 
             <nav className={classes.primary_navigation} id="primary-navigation">

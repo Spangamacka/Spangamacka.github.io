@@ -29,9 +29,15 @@
 
 
 .second_section {
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
    
+}
+
+.color_heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--clr-primary);
 }
 
 .bullet_point {
@@ -55,22 +61,44 @@
 
 .image_container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .image_holder {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 325px;
+    height: 325px;
     object-fit: contain;
   
 }
+/* Mobile screen */
+.image_holder_large {
+    position: relative;
+    width: 325px;
+    height: 365px;
+    object-fit: contain;
+  
+}
+
+.colorHead {
+    color: var(--clr-primary);
+}
+/* Desktop screen size */
 @media (min-width: 62em) {
 
     .image_holder {
         position: relative;
         width: 500px;
         height: 500px;
+        object-fit: contain;
+      
+    }
+
+    .image_holder_large {
+        position: relative;
+        width: 500px;
+        height: 650px;
         object-fit: contain;
       
     }
