@@ -4,9 +4,8 @@ import ActionButtonHollow from "../buttons/button-hollow.js";
 import LasjourInfobox from "../lasjourInfobox.js";
 import Image from "next/image";
 import Link from "next/link";
-
 import ExportedImage from 'next-image-export-optimizer';
-import bakgrundHus from 'public/background/background_desktop_s.webp';
+import backgroundHero from 'public/background/hero_main.png';
 
 
 function Hero() {
@@ -15,8 +14,8 @@ function Hero() {
       <ExportedImage
       placeholder="empty"
       unoptimized={true}
-      alt="bakgrund-hus"
-      src={bakgrundHus}
+      alt="öppen-dörr-låsöppning-låsbyte"
+      src={backgroundHero}
       quality={100}
       fill
       sizes="100vh"

@@ -1,5 +1,4 @@
 .container {
-    
     padding-top: 9rem;
 }
 
@@ -81,13 +80,71 @@
   
 }
 
+.image_holder_personal {
+    position: relative;
+    margin-bottom: 0.35rem;
+    width: 160px;
+    height: 260px;
+    object-fit: contain;
+}
+
+.image_holder_personal_seb {
+    margin-left: 1.2rem;
+    margin-bottom: 0.35rem;
+    position: relative;
+    width: 160px;
+    height: 260px;
+    object-fit: contain;
+}
+
+.personal_heading {
+    font-weight: 700;
+    color: var(--clr-primary);
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+.personal_contact {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personal_info_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contact_person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact_person h4 {
+    margin-bottom: 0.25rem;
+    margin-top: 0.1rem;
+}
+
+.contact_person h5 {
+    margin-top: 0;
+}
+
+
 
 @media (min-width: 62em) {
 
     .image_holder {
         position: relative;
-        width: 600px;
-        height: 650px;
+        width: 500px;
+        height: 550px;
         object-fit: contain;
       
     }
@@ -106,10 +163,6 @@
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
-
-    .container {
-        height: 100vh;
-    }
 }
 
 
@@ -121,4 +174,15 @@
         padding-right: 2rem;
         padding-left: 2rem;
     }
+
+    .personal_info_contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_person {
+        margin-bottom: 2rem;
+    }
 }
+

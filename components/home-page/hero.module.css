@@ -42,7 +42,7 @@
 }
 
 .lasjourInfo {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .lasjourInfo h3 {
@@ -127,7 +127,6 @@
 @media (max-width: 61em) {
   .contact_prompt {
     justify-content: center;
-    align-items: center;
     
   }
 
@@ -183,7 +182,6 @@
   .lasjourInfo {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
