@@ -3,10 +3,18 @@ import Link from "next/link";
 import Image from 'next/image';
 import ExportedImage from "next-image-export-optimizer";
 import placeHolderMan from 'public/placerholder_keyman.svg';
+import Head from "next/head";
 
 function TjansterPage() {
   return (
+    
     <div className={classes.container}>
+      <Head>
+      <title>
+         Låssmed som utför låsöppning, låsbyte och installation av smartlås
+        </title>
+      </Head>
+
       <div className={classes.even_columns}>
         <div>
           <h1>Det här gör vi på Nylås</h1>

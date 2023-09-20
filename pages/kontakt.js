@@ -6,10 +6,14 @@ import kontaktLokal from "public/kontakt/kontakt_lokal.webp";
 import alexpotrait from "public/kontakt/Alex_Kontakt.webp";
 import robinpotrait from "public/kontakt/Robin_Kontakt.webp";
 import sebastianpotrait from "public/kontakt/Seb_Kontakt.webp";
+import Head from "next/head";
 
 function KontaktPage() {
   return (
     <div className={classes.container}>
+      <Head>
+        <title>Kontakta Nylås - Låsöppning, låsbyte och smartlås i Stockholm för privatpersoner och företag</title>
+      </Head>
       <div className={classes.even_columns}>
         <div>
           <h1>Kontakt</h1>
@@ -93,7 +97,7 @@ function KontaktPage() {
             </div>
             <div className={classes.contact_person}>
               <h4>Sebastian Sundin</h4>
-              <h5>VD</h5>
+              <h5>Låssmed</h5>
               <Link href="mailto:sebastian.sundin@nylas.se"><h4>sebastian.sundin@nylas.se</h4></Link>
               <Link href="tel:+46738965523"><h4>073-896 55 23</h4></Link>
             </div>

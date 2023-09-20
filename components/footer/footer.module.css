@@ -30,9 +30,9 @@
     display: flex;
     justify-content: space-between;
   }
-  .footer .content .link_boxes .box{
+/*   .footer .content .link_boxes .box{
     width: calc(100% / 5 - 10px);
-  }
+  } */
   .content .link-boxes .box .link_name{
     color: #fff;
     font-size: 2rem;
@@ -47,7 +47,7 @@
   }
   .content .link_boxes .box li a{
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 400;
     text-decoration: none;
   }
@@ -83,6 +83,7 @@
   
   .temp {
     color: white;
+    font-size: 1.4rem;
   }
 
   @media (max-width: 900px) {

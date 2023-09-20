@@ -6,11 +6,17 @@ import ExportedImage from "next-image-export-optimizer";
 import bulletpointDark from 'public/icons/bullet_point_dark.svg';
 import lasbytemid from 'public/lasbyte/opendoormid.jpg';
 import lasbytefull from 'public/lasbyte/opendoorchange.jpg';
+import Head from "next/head";
 
 
 function LasbytePage() {
   return (
     <div className={classes.container}>
+      <Head>
+      <title>
+         Låsbyte I Stockholm - Mekaniska lås och smartlås
+        </title>
+      </Head>
       <div className={classes.even_columns}>
         <div>
           <h1>Dags att byta lås på ytterdörren? Vi fixar låsbytet. </h1>

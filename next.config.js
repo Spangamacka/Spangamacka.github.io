@@ -2,6 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
+
+  i18n: {
+    locales: ["sv", "en"],
+    defaultLocale: "sv",
+  },
 
 
   images: {

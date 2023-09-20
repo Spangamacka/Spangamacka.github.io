@@ -56,7 +56,7 @@ function FeaturedServices() {
               </p>
               <div className={classes.cardButton}>
                 <Link href="/tjanster/lasbyte">
-                  <ActionButtonCard text="Läs mer" />
+                  <ActionButtonCard text="Mer om låsbyte" />
                 </Link>
               </div>
             </div>
@@ -96,7 +96,7 @@ function FeaturedServices() {
               </p>
               <div className={classes.cardButton}>
                 <Link href="/tjanster/lasoppning">
-                  <ActionButtonCard text="Läs mer" />
+                  <ActionButtonCard text="Mer om låsöppning" />
                 </Link>
               </div>
             </div>
@@ -137,7 +137,7 @@ function FeaturedServices() {
               </p>
               <div className={classes.cardButton}>
                 <Link href="/tjanster/smartlas">
-                  <ActionButtonCard text="Läs mer" />
+                  <ActionButtonCard text="Mer om smartlås" />
                 </Link>
               </div>
             </div>

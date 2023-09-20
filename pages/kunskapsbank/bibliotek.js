@@ -2,10 +2,15 @@ import classes from "./bibliotek.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import ExportedImage from "next-image-export-optimizer";
+import Head from "next/head";
 
 function Bibliotek() {
   return (
+    
     <div className={classes.container}>
+      <Head>
+      <title>Råd, tips och smarta lösningar om lås</title>
+    </Head>
       <div className={classes.even_columns}>
         <div>
           <h1>Nyttig information</h1>
@@ -137,7 +142,7 @@ function Bibliotek() {
 
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <ExportedImage src="/bibliotek/learning.webp" fill alt="lära-sig-om-lås" placeholder="empty" unoptimized={true}/>
+            <ExportedImage src="/bibliotek/question.webp" fill alt="lära-sig-om-lås" placeholder="empty" unoptimized={true}/>
           </div>
         </div>
       </div>

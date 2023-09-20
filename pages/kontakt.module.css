@@ -60,7 +60,7 @@
     font-weight: 600;
 }
 
-.innerTextInfo {
+    .innerTextInfo {
     color: var(--clr-text-dark);
     padding-top: 0.5rem;
 
@@ -131,10 +131,12 @@
 .contact_person h4 {
     margin-bottom: 0.25rem;
     margin-top: 0.1rem;
+    color: var(--clr-text-dark);
 }
 
 .contact_person h5 {
     margin-top: 0;
+    color: var(--clr-text-dark);
 }
 
 

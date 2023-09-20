@@ -7,10 +7,16 @@ import bulletPoint from "public/icons/bullet_point_dark.svg";
 import yalesmartlas from "public/smartlas/smartlas-yale-byte.webp";
 import yaledoorhandle from "public/smartlas/yale_doorhandle.jpg";
 import smartlasmulti from "public/smartlas/smartlas_multi.jpg";
+import Head from "next/head";
 
 function SmartlasPage() {
   return (
     <div className={classes.container}>
+      <Head>
+      <title>
+         Smartlås, elektroniska lås i Stockholm - Smarta lösningar och låsbyten
+        </title>
+      </Head>
       <div className={classes.even_columns}>
         <div>
           <h1>

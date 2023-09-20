@@ -5,7 +5,7 @@ import LasjourInfobox from "../lasjourInfobox.js";
 import Image from "next/image";
 import Link from "next/link";
 import ExportedImage from 'next-image-export-optimizer';
-import backgroundHero from 'public/background/hero_main.png';
+import backgroundHeroT from 'public/background/hero_main_big_c.webp';
 
 
 function Hero() {
@@ -15,7 +15,7 @@ function Hero() {
       placeholder="empty"
       unoptimized={true}
       alt="öppen-dörr-låsöppning-låsbyte"
-      src={backgroundHero}
+      src={backgroundHeroT}
       quality={100}
       fill
       sizes="100vh"
@@ -49,12 +49,7 @@ function Hero() {
 
               <div className={classes.button_holder}>
                 <div>
-                  <Link href="/kunskapsbank/bibliotek">
-                    <ActionButton text="Hur kan vi hjälpa till?" />
-                  </Link>
-                </div>
-                <div className={classes.desktop_button}>
-                  <Link href="/tjanster">
+                <Link href="/tjanster">
                     <ActionButtonHollow text="Våra Tjänster" />
                   </Link>
                 </div>
@@ -78,7 +73,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-            <div className={classes.heroImage}>
+            <div>
              
             </div>
           </div>

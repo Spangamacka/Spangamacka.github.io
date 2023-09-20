@@ -4,10 +4,16 @@ import LasjourInfobox from "../../components/lasjourInfobox.js";
 import Link from 'next/link';
 import ExportedImage from "next-image-export-optimizer";
 import opendoor from 'public/lasoppning/opendoorM.jpg';
+import Head from "next/head";
 
 function LasoppningPage() {
   return (
     <div className={classes.container}>
+      <Head>
+      <title>
+         Låsöppning I hela Stockholm - Låsservice
+        </title>
+      </Head>
       <div className={classes.even_columns}>
         <div>
           <h1>Utelåst i Stockholm? Vi hjälper dig snabbt & tryggt.</h1>
