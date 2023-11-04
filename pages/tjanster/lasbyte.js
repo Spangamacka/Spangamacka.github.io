@@ -1,131 +1,135 @@
 import classes from "./lasbyte.module.css";
 import Image from "next/image";
 import ActionButton from "../../components/buttons/button-solid.js";
-import Link from 'next/link';
+import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
-import bulletpointDark from 'public/icons/bullet_point_dark.svg';
-import lasbytemid from 'public/lasbyte/opendoormid.jpg';
-import lasbytefull from 'public/lasbyte/opendoorchange.jpg';
+import bulletpointDark from "public/icons/bullet_point_dark.svg";
+import lasbytemid from "public/lasbyte/opendoormid.jpg";
+import lasbytefull from "public/lasbyte/opendoorchange.jpg";
 import Head from "next/head";
-
 
 function LasbytePage() {
   return (
     <div className={classes.container}>
       <Head>
-      <title>
-         Låsbyte I Stockholm - Mekaniska lås och smartlås
-        </title>
+        <title>Låsbyte I Stockholm - Mekaniska lås och smartlås</title>
       </Head>
       <div className={classes.even_columns}>
         <div>
-          <h1>Dags att byta lås på ytterdörren? Vi fixar låsbytet. </h1>
+          <h1>Dags att byta lås på ytterdörren?</h1>
           <p>
-            Är du Stockholmsbaserad och ska byta lås på ytterdörren eller annan
-            dörr i hemmet så finns våra låssmeder här för dig.  Vi
-            vet vikten av ett bra lås och med våra erfarna låssmeder ser vi till
-            att ert nya lås ger er tryggheten som kommer med ett säkert hem.  Vi
-            byter och installerar låscylinder, och kan också installera
-            smartalås till din dörr.  Lösningen kommer att skräddarsys efter
-            dina behov för att göra det både tryggt & prisvärt.  Din säkerhet är
-            prioriteten, så därför använder vi bara certifierade lås  Kontakta
-            oss för mer information! 
+            Behöver ni byta lås på er ytterdörr eller annan dörr i hemmet så
+            finns våra låssmeder här för dig, vi vet vikten av ett bra lås.
+            Tillsammans med dig så skräddarsyr vi en bra lösning, vi anpassar
+            oss efter dina behov. Vi installerar både mekaniska och smarta lås.
           </p>
-          <h2>Ni når oss på: <Link href="tel:+468306667">08-30 66 67</Link></h2>
+          <h2>Kontakta oss för mer information!</h2>
+          <h3>
+            Ni når oss på: <Link href="tel:+468306667">08-30 66 67</Link>
+          </h3>
           <div className={classes.second_section}>
-          <h2>Checklista för låsbyte. När ska du byta lås?</h2>
-          <p>
-            Ibland är det självklart när man ska byta lås. Men ibland kräver det
-            att vi tar en titt på vårt nuvarande lås. Här är några vanliga
-            anledningar att byta lås: 
-          </p>
-          <ul>
-            <li>
-              <span className={classes.bullet_point}>
-                <ExportedImage
-                placeholder="empty"
-                unoptimized={true}
-                  src={bulletpointDark}
-                  width={25}
-                  height={25}
-                  alt="bullet-point"
-                />
-                <p>
-                  Du märker att det börjar ta emot lite när du öppnar eller
-                  låser dörren. Det kanske bara kräver lite omvård, men är ofta
-                  ett tecken på ett gammalt lås. 
-                </p>
-              </span>
-            </li>
-            <li>
-              <span className={classes.bullet_point}>
-                <ExportedImage
-                placeholder="empty"
-                unoptimized={true}
-                  src={bulletpointDark}
-                  width={25}
-                  height={25}
-                  alt="bullet-point"
-                />
-                <p>
-                  Du har tappat nyckeln. Av säkerhetsskäl och för att känna sig
-                  extra säker passar många på att byta lås så inte en fungerande
-                  nyckel är på vift. 
-                </p>
-              </span>
-            </li>
-            <li>
-              <span className={classes.bullet_point}>
-                <ExportedImage
-                unoptimized={true}
-                placeholder="empty"
-                  src={bulletpointDark}
-                  width={25}
-                  height={25}
-                  alt="bullet-point"
-                />
-                <p>
-                  Du har haft inbrott. Har tjuven varit framme lämnar dom ofta
-                  skador på låsmekanismen. Då är det ofta bra att uppgradera
-                  till ett nytt starkt lås så att du kan känna dig tryggare. 
-                </p>
-              </span>
-            </li>
-            <li>
-              <span className={classes.bullet_point}>
-                <ExportedImage
-                placeholder="empty"
-                unoptimized={true}
-                  src={bulletpointDark}
-                  width={25}
-                  height={25}
-                  alt="bullet-point"
-                />
-                <p>
-                  Du har köpt nytt boende. Många byter låset när dom flyttar in,
-                  bara för att vara helt på det säkra att dom har de enda
-                  fungerande nycklarna. Och man vet inte alltid heller hur
-                  gammalt låset boendet kommer med är. 
-                </p>
-              </span>
-            </li>
-          </ul>
-          <p>
-            Det här är bara några exempel. Har du frågor om att byta lås finns
-            vi här för dig.
-          </p>
+            <h2>När ska du byta lås?</h2>
+            <p>
+              Ibland är det självklart när man behöver byta lås, i andra fall är
+              det inte lika självklart. Vi rekommenderar dig att ta kontakt med
+              oss innan ni blir utelåsta.
+            </p>
+            <h4>Här är de fyra vanligaste anledningarna till låsbyte:</h4>
+            <ul>
+              <li>
+                <span className={classes.bullet_point}>
+                  <ExportedImage
+                    placeholder="empty"
+                    unoptimized={true}
+                    src={bulletpointDark}
+                    width={25}
+                    height={25}
+                    alt="bullet-point"
+                  />
+                  <p>
+                    Låset börjar ta emot när du öppnar, stänger eller låser
+                    dörren. Låset kanske bara kräver lite omvårdnad, men det är
+                    ofta ett tecken på ett gammalt lås.
+                  </p>
+                </span>
+              </li>
+              <li>
+                <span className={classes.bullet_point}>
+                  <ExportedImage
+                    placeholder="empty"
+                    unoptimized={true}
+                    src={bulletpointDark}
+                    width={25}
+                    height={25}
+                    alt="bullet-point"
+                  />
+                  <p>
+                    En nyckel har försvunnit, av säkerhetsskäl är det bra att
+                    byta lås.
+                  </p>
+                </span>
+              </li>
+              <li>
+                <span className={classes.bullet_point}>
+                  <ExportedImage
+                    unoptimized={true}
+                    placeholder="empty"
+                    src={bulletpointDark}
+                    width={25}
+                    height={25}
+                    alt="bullet-point"
+                  />
+                  <p>
+                    Har tjuven varit framme och lämnat skador på låsmekanismen?
+                    Då är det bra att uppgradera till ett nytt lås och även se
+                    över din säkerhetslösning.
+                  </p>
+                </span>
+              </li>
+              <li>
+                <span className={classes.bullet_point}>
+                  <ExportedImage
+                    placeholder="empty"
+                    unoptimized={true}
+                    src={bulletpointDark}
+                    width={25}
+                    height={25}
+                    alt="bullet-point"
+                  />
+                  <p>
+                    Ni har köpt en ny bostad och vill vara säkra på att ingen
+                    obehörig har en nyckel.
+                  </p>
+                </span>
+              </li>
+            </ul>
+            <p>
+            Har du frågor om att byta lås finns vi här för dig.
+            </p>
           </div>
-          
+
           <Link href="/kontakt">
             <ActionButton text="Kontakta oss" />
-            </Link>
+          </Link>
         </div>
         <div className={classes.image_container}>
           <div className={classes.image_holder}>
-            <ExportedImage placeholder="empty" unoptimized={true} src={lasbytefull} fill alt="låsöppning-i-arbete" />
+            <ExportedImage
+              placeholder="empty"
+              unoptimized={true}
+              src={lasbytefull}
+              fill
+              alt="låsöppning-i-arbete"
+            />
           </div>
           <div className={classes.image_holder}>
-            <ExportedImage placeholder="empty" unoptimized={true} src={lasbytemid} fill alt="låsöppning-i-arbete" />
+            <ExportedImage
+              placeholder="empty"
+              unoptimized={true}
+              src={lasbytemid}
+              fill
+              alt="låsöppning-i-arbete"
+            />
           </div>
         </div>
       </div>

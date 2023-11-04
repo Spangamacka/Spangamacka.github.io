@@ -97,6 +97,15 @@
     object-fit: contain;
 }
 
+.image_holder_personal_alex {
+    margin-left: 1.2rem;
+    margin-bottom: 0.35rem;
+    position: relative;
+    width: 170px;
+    height: 260px;
+    object-fit: contain;
+}
+
 .personal_heading {
     font-weight: 700;
     color: var(--clr-primary);

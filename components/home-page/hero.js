@@ -4,81 +4,92 @@ import ActionButtonHollow from "../buttons/button-hollow.js";
 import LasjourInfobox from "../lasjourInfobox.js";
 import Image from "next/image";
 import Link from "next/link";
-import ExportedImage from 'next-image-export-optimizer';
-import backgroundHeroT from 'public/background/hero_main_big_c.webp';
+import ExportedImage from "next-image-export-optimizer";
+import heroDesktop from "public/background/n_hero_main.png";
+import heroMobile from "public/background/mobile_bg.webp";
 
+import CookieBanner from "../cookie-banner";
 
 function Hero() {
   return (
-    <div style={{position: "relative",}}>
-      <ExportedImage
-      placeholder="empty"
-      unoptimized={true}
-      alt="öppen-dörr-låsöppning-låsbyte"
-      src={backgroundHeroT}
-      quality={100}
-      fill
-      sizes="100vh"
-      priority={true}
-      style={{
-        objectFit: 'cover',
-        zIndex: '-20',
-      }}
-      />
-      
-
-      <div className={classes.heroBackground}>
-        <div className={classes.image_holder}>
-          
+    <div className={classes.container}>
+      <div className={classes.mobile_bg}>
+        <div className={classes.img_pos}>
+        <ExportedImage
+          placeholder="empty"
+          unoptimized={true}
+          alt="öppen-dörr-låsöppning-låsbyte"
+          src={heroMobile}
+          quality={100}
+          fill
+          sizes="100vh"
+          priority={true}
+          style={{
+            objectFit: "cover",
+            zIndex: "-1",
+          }}
+        />
         </div>
       </div>
-      <section className={classes.padding_hero}>
-        <div className={classes.container}>
-          <div className={classes.even_columns}>
-            <div className={classes.flow}>
-              <h1>Från digitala lås till låsbyte - Din låssmed i Stockholm.</h1>
-              
-                <p>
-                  Välkommen till Nylås, din låssmed i Stockholm med koll på allt
-                  från låscylinder till smarta lås. Vi skapar säkra och
-                  effektiva lösningar för privatpersoner, bolag och
-                  bostadsrättsföreningar. Vare sig du ska montera mekaniska
-                  lås eller vill få det senaste kodlåset monterat.
-                </p>
-          
-
-              <div className={classes.button_holder}>
-                <div>
-                <Link href="/tjanster">
-                    <ActionButtonHollow text="Våra Tjänster" />
-                  </Link>
-                </div>
-              </div>
-              
-              
-              <div className={classes.lasjourInfo}>
-              <div className={classes.contact_prompt}>
-                <span className={classes.contact_prompt_item}>Vid frågor eller tidsbokning dagtid</span>
-                <span className={classes.contact_prompt_item}>kontakta oss på</span>
-                <div className={classes.phone_number}>
-                <span><Link href="tel:+468306667">08-30 66 67</Link></span>
-                </div>
-              </div>
-             
-                <h3>Vid akuta ärenden kontakta oss dygnet runt på</h3>
-                <div className={classes.lasjourbox}>
-                  <Link href="https://www.xn--stockholmlsjour-qlb.se/">
-                    <LasjourInfobox />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div>
-             
-            </div>
-          </div>
+      <div className={classes.desktop_bg}>
+        <div className={classes.img_pos}>
+        <ExportedImage
+          placeholder="empty"
+          unoptimized={true}
+          alt="öppen-dörr-låsöppning-låsbyte"
+          src={heroDesktop}
+          quality={100}
+          fill
+          sizes="100vh"
+          priority={true}
+          style={{
+            objectFit: "cover",
+            zIndex: "-1",
+          }}
+        />
         </div>
-      </section>
+      </div>
+
+  
+      <div className={classes.content_hero_first}>
+        <h1>Nylås - Ditt självklara val av låssmed</h1>
+        <p>
+          Vi hjälper till med digitala lås, låsöppningar, låsmonteringar och
+          säkerhetslösningar för både privatpersoner, företag och
+          bostadsrättsföreningar.
+        </p>
+        <div className={classes.spacer}></div>
+        <h3>Vid frågor eller tidsbokning under kontorstid</h3>
+        <Link href="tel:+468306667" style={{ display: "contents" }}>
+          <span>08-30 66 67</span>
+        </Link>
+        <div className={classes.spacer}></div>
+        <h3>Vid akuta ärenden kontakta oss via Stockholm låsjour</h3>
+        <Link href="tel:+46812154188" style={{ display: "contents" }}>
+          <span>08-12 154 188</span>
+        </Link>
+      </div>
+      <div className={classes.end_spacer}></div>
+
+      <div className={classes.divider}></div>
+      <div className={classes.content_hero_second}>
+        <div className={classes.content_hero_second_container}>
+          <h2>Vi är experter på smarta lås och hjälper till i hela Sverige</h2>
+          <p>
+            Kontakta oss för kostnadsfri konsultation, inget uppdrag är för
+            stort eller för litet.
+          </p>
+          <Link
+            href="mailto:alexander.falk@nylas.se"
+            style={{ display: "contents" }}
+          >
+            <span>alexander.falk@nylas.se</span>
+          </Link>
+          <Link href="tel:+46700126667" style={{ display: "contents" }}>
+            <span>070-012 66 67</span>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

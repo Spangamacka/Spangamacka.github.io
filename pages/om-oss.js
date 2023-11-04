@@ -8,31 +8,35 @@ function OmOssPage() {
   return (
     <div className={classes.container}>
       <Head>
-        <title>Om Nylås - Låsservice i Stockholm för företag och privatperson</title>
+        <title>
+          Om Nylås - Låsservice i Stockholm för företag och privatperson
+        </title>
       </Head>
       <div className={classes.even_columns}>
         <div>
-          <h1>Vi är Nylås</h1>
+          <h1>Välkommen till oss på Nylås</h1>
           <p>
-            Vi är en låssmed som utför låsbyten, låsöppningar och installation
-            av smarta lås och vi har även låsjour dygnet runt. Vi är baserade i
-            Stockholm och strävar ständigt efter att uföra säkra och effektiva
-            jobb.
+            Vi är en etablerad låssmed som utför låsbyten, låsöppningar och
+            installationer i hela Stockholm. Vi specialiserar oss på smarta lås,
+            nytt för 2023 är att vi även erbjuder våra installationer i hela
+            Sverige.
+          </p>
+          <div></div>
+          <p>
+            Utöver vår expertis av smarta lås så bedriver vi Stockholms bästa
+            låsjour.
           </p>
 
-          <div className={classes.second_section}>
-            <h2>Yale doorman</h2>
-            <p>
-              Vi är speciellt stolta över vår expertis inom installation av
-              Yales smarta dörrlås.
-            </p>
-          </div>
           <div className={classes.second_section}>
             <h2>Vem kan vi hjälpa?</h2>
             <p>
               Oavsett om du är privatperson, företag eller en
               bostadsrättsförening så hjälper vi på Nylås dig.
             </p>
+          </div>
+
+          <div className={classes.second_section}>
+            <h3>Vi på Nylås önskar dig en trevlig dag!</h3>
           </div>
 
           <div className={classes.temp_filler}></div>

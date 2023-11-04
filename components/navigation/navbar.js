@@ -4,10 +4,12 @@ import ActionButtonSolidSmall from "../buttons/button-solid-small.js";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 import ExportedImage from "next-image-export-optimizer";
-import nylasLogo from 'public/logo/NylåsLogo.svg';
-import hamburgerIcon from 'public/icons/icon-hamburger.svg';
+import nylasLogo from "public/logo/NylåsLogo.svg";
+import nylasLogoWhite from "public/logo/logo_white.svg";
+import hamburgerIcon from "public/icons/icon-hamburger.svg";
 
 import { Red_Hat_Display } from "next/font/google";
 const redhatdisplay = Red_Hat_Display({
@@ -108,7 +110,6 @@ function Navbar() {
                 quality={100}
                 alt="hamburger-icon"
               />
-              
             </button>
 
             <nav className={classes.primary_navigation} id="primary-navigation">

@@ -11,9 +11,9 @@
     bottom: auto;
     left: 0%;
     right: 0%;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid var(--clr-background-blue);
+    background-color: rgb(255, 255, 255); 
     z-index: 5;
+    
 } 
  
 .container {
@@ -37,13 +37,12 @@
     display: flex;
     gap: clamp(1.5rem, 5vw, 4rem);
     font-weight: 600;
-    color: var(--clr-primary);
 }
 
 .nav_list a {
     text-decoration: none;
-    color: var(--clr-primary);
     font-weight: 700;
+    
 }
 
 .nav_list a:hover,
@@ -51,6 +50,9 @@
     color: var(--clr-secondary);
 }
 
+.navbartest {
+    background-color: red;
+}
 
 @media (min-width: 50em) {
     .display_md_inline_flex {

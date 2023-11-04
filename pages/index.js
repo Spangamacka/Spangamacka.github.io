@@ -2,10 +2,11 @@ import { Fragment } from "react";
 import Hero from "../components/home-page/hero";
 import Navbar from "../components/navigation/navbar";
 import FeaturedServices from "../components/home-page/featured-services.js";
-import CompanyFace from "../components/home-page/company-face.js";
 import SmartLockSection from "../components/home-page/smartlock-section.js";
 import Footer from "../components/footer/footer.js";
 import Head from "next/head";
+import Kontakt from "./kontakt";
+import classes from "./index.module.css";
 
 export default function HomePage() {
   return (
@@ -42,8 +43,10 @@ export default function HomePage() {
       </Head>
       <Hero />
       <FeaturedServices />
-      <CompanyFace />
-      <SmartLockSection />
+      <div className={classes.contact_holder}>
+      <Kontakt />
+      </div>
+    
     </Fragment>
   );
 }

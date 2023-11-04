@@ -17,7 +17,8 @@
   color: var(--clr-primary);
   font-size: 1.3rem;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2.1rem;
+  margin-bottom: 2.1rem;
 }
 
 .cards_holder {
@@ -43,6 +44,8 @@
 .cardContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 1rem;
   max-width: 20rem;
   max-height: 19rem;
   padding: 1.5rem;
@@ -51,8 +54,16 @@
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.quickInfo {
+  display: flex;
+  flex-direction: column;
+}
+
 .quickInfo p {
-  font-size: 17px;
+  font-size: 1.1rem;
+  margin: 0;
+  display: flex;
+
 }
 
 .quickInfo h2 {
@@ -61,10 +72,8 @@
 }
 
 .cardButton {
-  display: flex;
-  justify-content: right;
-  margin-top: 1.65rem;
-  position: relative;
+  margin-top: auto;
+  margin-left: auto;
 }
 
 .feature_title {
@@ -76,6 +85,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
   max-width: 20rem;
   max-height: 19rem;
   padding: 1.5rem;
@@ -139,6 +149,12 @@
 }
 
 @media (max-width: 710px) {
+
+  .cardButton {
+    visibility: hidden;
+    display: none;
+  }
+
   .quickInfo {
     visibility: hidden;
     display: none;

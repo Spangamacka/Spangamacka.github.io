@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nylas.se
+
+# Sitemaps
+Sitemap: https://nylas.se/sitemap.xml

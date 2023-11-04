@@ -11,8 +11,8 @@
 }
 
 .container h2 {
-    font-weight: 500;
-    font-size: var(--size-400);
+    font-weight: 700;
+    font-size: 1.4rem;
     color: var(--clr-text-dark);
 }
 
@@ -20,6 +20,12 @@
     font-weight: 500;
     color: var(--clr-primary);
 }
+
+.container h5 {
+    font-size: 1.15rem;
+    color: var(--clr-text-dark);
+}
+
 
 .even_columns {
     display: grid;
@@ -84,6 +90,61 @@
 .colorHead {
     color: var(--clr-primary);
 }
+
+.contact_prompt {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.contact_prompt h4 {
+    font-size: 1.4rem;
+    color: var(--clr-text-dark);
+    margin: 0;
+}
+
+.contact_prompt h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--clr-text-dark);
+}
+
+.smartlas_info h5{
+    font-size: 1.4rem;
+    color: var(--clr-text-dark);
+}
+
+.smartlas_info ul, .smartlas_info li {
+    list-style: inside;
+    margin: .5rem;
+    font-size: 1.1rem;
+
+}
+
+.smartlas_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.link_text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.divider {
+
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.spacer {
+    margin-top: 3rem;
+}
 /* Desktop screen size */
 @media (min-width: 62em) {
 
@@ -125,5 +186,18 @@
         justify-content: center;
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+
+    .smartlas_header {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .smartlas_header h5 {
+        margin: 0;
+    }
+
+    .link_text {
+        margin-bottom: 1.2rem;
     }
 }

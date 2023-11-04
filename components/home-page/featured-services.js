@@ -6,22 +6,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 import ExportedImage from "next-image-export-optimizer";
-import keyIcon from 'public/icons/key_icon_m.svg';
-import openLock from 'public/icons/openlock_icon.svg';
-import smartLock from 'public/icons/smartlock_icon.svg';
-import arrowRight from 'public/icons/arrow-right.svg';
+import keyIcon from "public/icons/key_icon_m.svg";
+import openLock from "public/icons/openlock_icon.svg";
+import smartLock from "public/icons/smartlock_icon.svg";
+import arrowRight from "public/icons/arrow-right.svg";
 
 function FeaturedServices() {
   return (
     <div className={classes.container}>
       <div className={classes.service_info}>
         <h2>Våra Tjänster</h2>
-        <div className={classes.text}>
-          <p>
-            Vi utför det mesta inom lås. Tveka inte att kontakta oss för mer
-            information
-          </p>
-        </div>
       </div>
 
       <div className={classes.card_grid_holder}>
@@ -37,7 +31,13 @@ function FeaturedServices() {
                       position: "relative",
                     }}
                   >
-                    <ExportedImage src={keyIcon} fill alt="key_icon" unoptimized={true} placeholder="empty"/>
+                    <ExportedImage
+                      src={keyIcon}
+                      fill
+                      alt="key_icon"
+                      unoptimized={true}
+                      placeholder="empty"
+                    />
                   </div>
                 </Link>
               </div>
@@ -50,15 +50,12 @@ function FeaturedServices() {
             </div>
 
             <div className={classes.quickInfo}>
-              <p>
-                Vi installerar och byter lås. Nylås hjälper dig med dina lås
-                genom skräddarsydda lösningar just för dig eller ditt företag.
-              </p>
-              <div className={classes.cardButton}>
-                <Link href="/tjanster/lasbyte">
-                  <ActionButtonCard text="Mer om låsbyte" />
-                </Link>
-              </div>
+              <p>Vi hjälper dig att installera och montera ditt nya lås.</p>
+            </div>
+            <div className={classes.cardButton}>
+              <Link href="/tjanster/lasbyte">
+                <ActionButtonCard text="Mer om låsbyte" />
+              </Link>
             </div>
           </div>
           <div className={classes.cardContainer}>
@@ -73,7 +70,7 @@ function FeaturedServices() {
                     }}
                   >
                     <ExportedImage
-                    placeholder="empty"
+                      placeholder="empty"
                       unoptimized={true}
                       src={openLock}
                       fill
@@ -91,14 +88,14 @@ function FeaturedServices() {
 
             <div className={classes.quickInfo}>
               <p>
-                Nylås hjälper tryggt och enkelt till med låsöppningar. Dessutom
-                hjälper vår låsjour i stockholm snabbt till vid akuta ärenden.
+                Vi hjälper dig att få upp din dörr, vår låsjour i Stockholm
+                finns även tillgänglig vid akuta ärenden.
               </p>
-              <div className={classes.cardButton}>
-                <Link href="/tjanster/lasoppning">
-                  <ActionButtonCard text="Mer om låsöppning" />
-                </Link>
-              </div>
+            </div>
+            <div className={classes.cardButton}>
+              <Link href="/tjanster/lasoppning">
+                <ActionButtonCard text="Mer om låsöppning" />
+              </Link>
             </div>
           </div>
           <div className={classes.cardContainer}>
@@ -113,8 +110,8 @@ function FeaturedServices() {
                     }}
                   >
                     <ExportedImage
-                    placeholder="empty"
-                    unoptimized={true}
+                      placeholder="empty"
+                      unoptimized={true}
                       src={smartLock}
                       fill
                       alt="key_icon"
@@ -132,14 +129,14 @@ function FeaturedServices() {
 
             <div className={classes.quickInfo}>
               <p>
-                Vi monterar och installerar smartlås. Gör som många andra och
-                upplev smidigheten med smartlås. Enkelt och säkert.
+                Vi monterar och installerar smarta lås till hus och lägenheter,
+                gör som många andra och upplev smidigheten med smarta lås.
               </p>
-              <div className={classes.cardButton}>
-                <Link href="/tjanster/smartlas">
-                  <ActionButtonCard text="Mer om smartlås" />
-                </Link>
-              </div>
+            </div>
+            <div className={classes.cardButton}>
+              <Link href="/tjanster/smartlas">
+                <ActionButtonCard text="Mer om smartlås" />
+              </Link>
             </div>
           </div>
 
@@ -147,8 +144,8 @@ function FeaturedServices() {
             <Link href="/tjanster">
               <div className={classes.image}>
                 <ExportedImage
-                placeholder="empty"
-                unoptimized={true}
+                  placeholder="empty"
+                  unoptimized={true}
                   src={arrowRight}
                   width={75}
                   height={75}

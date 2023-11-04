@@ -5,10 +5,7 @@ const nextConfig = {
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
 
-  i18n: {
-    locales: ["sv", "en"],
-    defaultLocale: "sv",
-  },
+
 
 
   images: {

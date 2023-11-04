@@ -63,7 +63,7 @@ function Footer() {
                 <Link href="/tjanster/lasoppning">Låsöppning</Link>
               </li>
               <li>
-                <Link href="/tjanster/smartlas">Smartlås</Link>
+                <Link href="/tjanster/smartlas">Smarta lås</Link>
               </li>
             </ul>
             <ul className={classes.box}>

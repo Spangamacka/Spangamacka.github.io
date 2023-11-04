@@ -3,6 +3,9 @@
     padding-top: 9rem;
 }
 
+.intro {
+    margin-bottom: 2rem;
+}
 
 .container h1 {
     line-height: 1.2;
@@ -20,6 +23,12 @@
 .container h3 {
     font-weight: 500;
     color: var(--clr-primary);
+}
+
+.container h4 {
+    font-weight: 600;
+    color: var(--clr-text-dark);
+    font-size: 1.2rem;
 }
 
 .even_columns {
@@ -63,6 +72,31 @@
     height: 325px;
     object-fit: contain;
   
+}
+
+.container ul, .container li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.bullet_point {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    color: var(--clr-primary);
+    font-weight: 600;
+}
+
+.contact {
+    color: var(--clr-primary);
+    font-weight: 600;
+    padding-top: 2rem;
 }
 @media (min-width: 62em) {
 

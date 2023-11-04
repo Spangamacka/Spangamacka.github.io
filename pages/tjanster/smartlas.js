@@ -13,30 +13,29 @@ function SmartlasPage() {
   return (
     <div className={classes.container}>
       <Head>
-      <title>
-         Smartlås, elektroniska lås i Stockholm - Smarta lösningar och låsbyten
+        <title>
+          Smartlås, elektroniska lås i Stockholm - Smarta lösningar och låsbyten
         </title>
       </Head>
       <div className={classes.even_columns}>
         <div>
-          <h1>
-            Vi på Nylås installerar enkelt och bekvämt ditt nästa yale
-            doormanlås.
-          </h1>
+          <h1>Vi installerar ditt smarta lås</h1>
           <p>
-            Yale Doorman smarta lås erbjuder enastående bekvämligheter och
-            säkerhet för ditt hem. Med dess intuitiva touch-skärm och
-            fjärråtkomst via appen kan du enkelt kontrollera och övervaka din
-            dörr. Delade digitala nycklar möjliggör enkel åtkomst för familj och
-            vänner, medan den robusta designen ger pålitligt skydd mot inbrott
-            och obehörig åtkomst.
+            Ett smart lås erbjuder enastående bekvämligheter och säkerhet för
+            ditt hem. Det är enkelt att dela digitala nycklar med både familj
+            och vänner, utöver detta kan ni även skapa tillfällig access till
+            hantverkare, fastighetsskötare eller övriga besökare som behöver
+            tillfällig tillgång till din bostad.
           </p>
-          <h2>
-            Ring oss så berättar vi mer:{" "}
-            <Link href="tel:+468306667">08-30 66 67</Link>
-          </h2>
+          <div></div>
+          <p>
+            Om du tappar en nyckel till ett mekaniskt lås så behöver du byta ut
+            låset för att vara säker på att ingen kan ta sig in, men med ett
+            smart lås så sparar du både tid och pengar då du enkelt kan spärra
+            en borttappad bricka och samtidigt aktivera en ny.
+          </p>
           <div className={classes.second_section}>
-            <h2>Yale doorman: Upplev Smidigheten med kodlås</h2>
+            <h2>Varför ska man skaffa ett smart lås?</h2>
 
             <ul>
               <li>
@@ -49,7 +48,7 @@ function SmartlasPage() {
                     height={25}
                     alt="bullet-point"
                   />
-                  <p>Öppna med kod, nyckelbricka eller app.</p>
+                  <p>Automatisk låsning</p>
                 </span>
               </li>
               <li>
@@ -62,9 +61,7 @@ function SmartlasPage() {
                     height={25}
                     alt="bullet-point"
                   />
-                  <p>
-                    Du bestämmer enkelt behörighet direkt via Yale Home appen.
-                  </p>
+                  <p>Inga nycklar på vift</p>
                 </span>
               </li>
               <li>
@@ -77,10 +74,7 @@ function SmartlasPage() {
                     height={25}
                     alt="bullet-point"
                   />
-                  <p>
-                    Styr själv hur du tar emot hemleveranser direkt i Yale Home
-                    appen.
-                  </p>
+                  <p>Öppna dörren på distans</p>
                 </span>
               </li>
               <li>
@@ -93,7 +87,7 @@ function SmartlasPage() {
                     height={25}
                     alt="bullet-point"
                   />
-                  <p>Var lugn med Yales mekaniska nödöppning från insidan.</p>
+                  <p>Öppna dörren med mobilen</p>
                 </span>
               </li>
               <li>
@@ -106,123 +100,120 @@ function SmartlasPage() {
                     height={25}
                     alt="bullet-point"
                   />
-                  <p>
-                    Yale Doorman L3S är ett säkert smartlås certifierad av SSF
-                    för både mekanisk och digital säkerhet (SSF 3522 och SSF
-                    3523).
-                  </p>
+                  <p>Högre säkerhet</p>
+                </span>
+              </li>
+              <li>
+                <span className={classes.bullet_point}>
+                  <ExportedImage
+                    placeholder="empty"
+                    src={bulletPoint}
+                    unoptimized={true}
+                    width={25}
+                    height={25}
+                    alt="bullet-point"
+                  />
+                  <p>Barnen behöver inte bära med sig en egen nyckel</p>
                 </span>
               </li>
             </ul>
           </div>
 
           <div className={classes.second_section}>
-            <h2>Vad kan man göra med Yale doorman?</h2>
+            <div className={classes.contact_prompt}>
+              <h4>Vilket lås och modell är bäst för dig?</h4>
+              <h5>
+                Ring oss så berättar vi mer:{" "}
+                <Link href="tel:+468306667">
+                  <p>08-30 66 67</p>
+                </Link>
+              </h5>
+            </div>
 
-            <ul>
-              <li>
-                <span className={classes.bullet_point}>
-                  <ExportedImage
-                    placeholder="empty"
-                    src={bulletPoint}
-                    unoptimized={true}
-                    width={25}
-                    height={25}
-                    alt="bullet-point"
-                  />
-                  <p>Använd upp till 30 nyckelbrickor på samma lås.</p>
-                </span>
-              </li>
-              <li>
-                <span className={classes.bullet_point}>
-                  <ExportedImage
-                    placeholder="empty"
-                    src={bulletPoint}
-                    unoptimized={true}
-                    width={25}
-                    height={25}
-                    alt="bullet-point"
-                  />
-                  <p>
-                    Nyckelbricka L3 kan du registrera på ett obegränsat antal
-                    Yale Doorman L3S lås.
-                  </p>
-                </span>
-              </li>
-              <li>
-                <span className={classes.bullet_point}>
-                  <ExportedImage
-                    placeholder="empty"
-                    src={bulletPoint}
-                    unoptimized={true}
-                    width={25}
-                    height={25}
-                    alt="bullet-point"
-                  />
-                  <p>Upp till 30 unika användarkoder till ett och samma lås.</p>
-                </span>
-              </li>
-              <li>
-                <span className={classes.bullet_point}>
-                  <ExportedImage
-                    placeholder="empty"
-                    src={bulletPoint}
-                    unoptimized={true}
-                    width={25}
-                    height={25}
-                    alt="bullet-point"
-                  />
-                  <p>
-                    Registrera upp till 254 st användare och tilldela dessa som
-                    antingen gäst eller ägare.
-                  </p>
-                </span>
-
-                <div className={classes.second_section}>
-                  <span className={classes.color_heading}>Vanliga frågor gällande smartalås</span>
-                </div>
-                
-                <div className={classes.second_section}>
-                  <h2>
-                    Måste jag ha ett godkänt lås för att försäkringen ska gälla?
-                  </h2>
-                  <p>
-                    Med ”godkänt lås” avses ett lås som är certifierat enligt
-                    SSF 3522 klass 3. Huruvida ett sådant krävs för att
-                    försäkringen ska gälla varierar mellan olika
-                    försäkringsbolag. Men generellt sett behövs det inte. Hos
-                    exempelvis Trygg-Hansa gäller kravet bara om lösöresvärdet
-                    överstiger 1 500 000 kr, exempelvis. Även Folksam och
-                    Moderna försäkringar följer motsvarande linje. Men
-                    kontrollera vad som gäller hos ditt försäkringsbolag.
-                  </p>
-                </div>
-
-                <div className={classes.second_section}>
-                  <h2>Går ett elektroniskt lås att hacka?</h2>
-                  <p>
-                    Ja, teoretiskt. Bland annat därför innebär den nya SFF 3522
-                    klass 3 att kommunikationen mellan låsets styrenhet och
-                    själva låsblecket ska vara krypterad.
-                  </p>
-                </div>
-
-                <div className={classes.second_section}>
-                  <h2>
-                    Hur mycket osäkrare är ett SSF 3522 klass 2-lås jämfört med
-                    ett klass 3-lås?
-                  </h2>
-                  <p>
-                    I princip är det bara två delar som skiljer. Ett klass 2-lås
-                    får ha ett vred på insidan som låser upp dörren, till
-                    skillnad från klass 3-lås. Den andra skillnaden är att
-                    signalen mellan styrenhet och låsbleck är krypterad hos
-                    klass 3-lås. Kraven på inbrottsskydd från dörrens utsida är
-                    desamma för de båda klasserna.
-                  </p>
-                </div>
-              </li>
-            </ul>
+            <div className={classes.smartlas_info}>
+              <div className={classes.smartlas_header}>
+                <h5>Yale Doorman</h5>
+                <Link href="/tjanster/yale-smartlas">
+                  <span className={classes.link_text}>
+                    Se mer om Yale smarta lås{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.835 6.91846L23.9166 14.0001L16.835 21.0818"
+                        stroke="#0047C7"
+                        strokeWidth="1.85"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M4.08301 14H23.718"
+                        stroke="#0047C7"
+                        strokeWidth="1.85"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+              <ul>
+                <li>Yale Doorman Classic</li>
+                <li>Yale Doorman L3</li>
+                <li>Yale Doorman Flex</li>
+                <li>Yale Doorman Linus</li>
+              </ul>
+            </div>
+            <div className={classes.spacer}>
+            <div className={classes.smartlas_info}>
+              <div className={classes.smartlas_header}>
+                <h5>Nordic</h5>
+                {/* <Link href="/bg-nordic-smartlas">
+                  <span className={classes.link_text}>
+                    Läs mer om Nordic BG lås
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.835 6.91846L23.9166 14.0001L16.835 21.0818"
+                        stroke="#0047C7"
+                        strokeWidth="1.85"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M4.08301 14H23.718"
+                        stroke="#0047C7"
+                        strokeWidth="1.85"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </Link> */}
+              </div>
+              <ul>
+                <li>BG2000</li>
+                <li>BG3000</li>
+                <li>BG4000</li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div className={classes.divider}>
+            <h5>Mer information om andra smarta lås kommer inom kort.</h5>
           </div>
           <Link href="/kontakt">
             <ActionButton text="Kontakta oss" />
