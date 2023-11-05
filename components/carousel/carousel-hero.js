@@ -12,7 +12,9 @@ import SmartlockCampaign from ".././campaigns/smartlock-campaign.js";
 function CarouselHero() {
   return (
     <div className={classes.holder}>
-      <Carousel showThumbs={false}>
+      <Carousel 
+      showThumbs={false}
+      swipeable={false}>
         <div className={classes.heroHolder}>
           <SmartlockCampaign />
         </div>

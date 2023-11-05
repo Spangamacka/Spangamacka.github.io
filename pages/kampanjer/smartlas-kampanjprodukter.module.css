@@ -134,4 +134,8 @@
     .product_function_grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .mobile_break {
+        display: none;
+    }
 }

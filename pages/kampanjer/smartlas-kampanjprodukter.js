@@ -47,8 +47,9 @@ function Smartlaskampanjprodukter() {
             <p className={classes.infoCard}>
               Smartlås Nordic BG3000 med installation*
             </p>
-            <span className={classes.price}>Kampanjpris 5995:-</span> (efter
-            rotavdrag.)
+            <span className={classes.price}>Kampanjpris 5995:- </span>
+            <br className={classes.mobile_break} />
+            <span className={classes.rot_info}>(efter rotavdrag.)</span>
             <p className={classes.infoCard_second}>(Ordinarie pris 8445:-)</p>
             <p>
               BG3000 är avsett för kompletterande montering på befintligt låshus
@@ -125,8 +126,9 @@ function Smartlaskampanjprodukter() {
             <p className={classes.infoCard}>
               Smartlås Nordic BG4000 med installation*
             </p>
-            <span className={classes.price}>Kampanjpris 6495:-</span> (efter
-            rotavdrag.)
+            <span className={classes.price}>Kampanjpris 6495:- </span>
+            <br className={classes.mobile_break} />
+            (efter rotavdrag.)
             <p className={classes.infoCard_second}>(Ordinarie pris 8945:-)</p>
             <p>
               Få ut det mesta av ditt Nordic+ genom att montera smartlåset
@@ -201,8 +203,9 @@ function Smartlaskampanjprodukter() {
             <p className={classes.infoCard}>
               Smartlås Yale L3S med installation.
             </p>
-            <span className={classes.price}>Kampanjpris 8245:-</span> (efter
-            rotavdrag.)
+            <span className={classes.price}>Kampanjpris 8245:- </span>
+            <br className={classes.mobile_break} />
+            (efter rotavdrag.)
             <p className={classes.infoCard_second}>(Ordinarie pris 9495:-)</p>
             <p>
               Yale Doorman L3S är ett säkert smartlås med godkänd låsning i både
@@ -264,8 +267,9 @@ function Smartlaskampanjprodukter() {
             <p className={classes.infoCard}>
               Smartlås Yale Classic med installation.
             </p>
-            <span className={classes.price}>Kampanjpris 5899:-</span> (efter
-            rotavdrag.)
+            <span className={classes.price}>Kampanjpris 5899:- </span>
+            <br className={classes.mobile_break} />
+            (efter rotavdrag.)
             <p className={classes.infoCard_second}>(Ordinarie pris 7149:-)</p>
             <p>
               Yale Classic fungerar efter dina önskemål. I bas utförande är
@@ -319,10 +323,7 @@ function Smartlaskampanjprodukter() {
           Gör som många andra och upplev smidigheten med smarta lås redan idag!
         </span>
         <p className={classes.contact}>Kontakta oss för mer information</p>
-        <Link
-          href="mailto:info@nylas.se"
-          style={{ display: "contents" }}
-        >
+        <Link href="mailto:info@nylas.se" style={{ display: "contents" }}>
           <span className={classes.contact_info}>info@nylas.se</span>
         </Link>
         <Link href="tel:+468306667" style={{ display: "contents" }}>
