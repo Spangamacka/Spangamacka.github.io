@@ -118,13 +118,16 @@ function Navbar() {
                   <Link href="/tjanster">Tjänster</Link>
                 </li>
                 <li>
-                  <Link href="/kunskapsbank/bibliotek">Kunskapsbank</Link>
+                  <Link href="/digitala-losningar/digitalt">Digitala lösningar</Link>
                 </li>
                 <li>
                   <Link href="/om-oss">Om oss</Link>
                 </li>
                 <li>
                   <Link href="/kontakt">Kontakt</Link>
+                </li>
+                <li>
+                  <Link href="/kunskap/laskunskap">Kunskap</Link>
                 </li>
               </ul>
             </nav>
@@ -133,9 +136,9 @@ function Navbar() {
                 (classes.display_md_inline_flex, classes.display_sm_none)
               }
             >
-              <Link href="/tjanster">
+              {/* <Link href="/tjanster">
                 <ActionButtonSolidSmall text="Rådfråga oss" />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

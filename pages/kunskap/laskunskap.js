@@ -1,10 +1,10 @@
-import classes from "./bibliotek.module.css";
+import classes from "./laskunskap.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import ExportedImage from "next-image-export-optimizer";
 import Head from "next/head";
 
-function Bibliotek() {
+function Laskunskap() {
   return (
     
     <div className={classes.container}>
@@ -150,4 +150,4 @@ function Bibliotek() {
   );
 }
 
-export default Bibliotek;
+export default Laskunskap;

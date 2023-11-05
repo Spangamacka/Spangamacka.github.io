@@ -99,3 +99,10 @@
       display: none;
     }
   }
+
+  @media (max-width: 23rem){
+    .content_hero_first {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;;
+    }
+  }
