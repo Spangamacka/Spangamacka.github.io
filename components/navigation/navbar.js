@@ -57,12 +57,19 @@ function Navbar() {
                     </span>
                   </div>
                 </li>
+              
+                <li>
+                <div className={classes.nav_mobile_linkhold}>
+                  <Link href="/digitala-losningar/digitalt">Digitala lösningar </Link>
+                    <span className={classes.internal_link}>
+                      <Link href="/digitala-losningar/digitalt">Digitalt</Link>
+                    </span>
+                  </div>
+                </li>
+
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link href="/kunskapsbank/bibliotek">Kunskapsbank</Link>
-                    <span className={classes.internal_link}>
-                      <Link href="/kunskapsbank/bibliotek">Bibliotek</Link>
-                    </span>
+                    <Link href="/kunskap/laskunskap">Låskunskap</Link>
                   </div>
                 </li>
                 <li>
@@ -118,7 +125,9 @@ function Navbar() {
                   <Link href="/tjanster">Tjänster</Link>
                 </li>
                 <li>
-                  <Link href="/digitala-losningar/digitalt">Digitala lösningar</Link>
+                  <Link href="/digitala-losningar/digitalt">
+                    Digitala lösningar
+                  </Link>
                 </li>
                 <li>
                   <Link href="/om-oss">Om oss</Link>
