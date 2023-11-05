@@ -8,6 +8,7 @@ import yalesmartlas from "public/smartlas/smartlas-yale-byte.webp";
 import yaledoorhandle from "public/smartlas/yale_doorhandle.jpg";
 import smartlasmulti from "public/smartlas/smartlas_multi.jpg";
 import Head from "next/head";
+import CampaignButton from '../../components/buttons/campaign-button.js';
 
 function SmartlasPage() {
   return (
@@ -218,6 +219,15 @@ function SmartlasPage() {
           <Link href="/kontakt">
             <ActionButton text="Kontakta oss" />
           </Link>
+
+          <div className={classes.campaign}>
+            <p>Missa inte vår kampanj på smarta lås, som gäller året ut!</p>
+          <Link href="/kampanjer/smartlas-kampanjprodukter">
+            <CampaignButton text="Till smartlås kampanjen" />
+          </Link>
+          </div>
+      
+
         </div>
         <div className={classes.image_container}>
           <div className={classes.image_holder}>

@@ -1,8 +1,7 @@
 .container {
   height: 100%;
+  box-sizing: content-box !important;
 }
-
-
 
 .content_hero_first h1 {
   max-width: 40rem;
@@ -43,46 +42,22 @@
   margin-top: 0.1rem;
 }
 
-.content_hero_second_container h2 {
-  font-weight: 700;
-  font-size: var(--size-600);
-  color: white;
-  margin-bottom: 0;
-}
-
-.content_hero_second_container p {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.content_hero_second_container span {
-  color: white;
-  font-weight: 500;
-  font-size: 1.2rem;
-  max-width: 15rem;
-  margin-bottom: 0.5rem;
-}
-
-.content_hero_second_container {
-  background-color: var(--clr-primary);
-}
-
 .img_pos {
   position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    object-fit: cover;
-    color: transparent;
-    z-index: -1;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  color: transparent;
+  z-index: -1;
 }
 
 @media (min-width: 61em) {
   .content_hero_first {
+    box-sizing: content-box !important;
     display: flex;
     height: 60vh;
     flex-direction: column;
@@ -95,32 +70,13 @@
     margin-inline: auto;
     color: white;
   }
-
-  .content_hero_second {
-    width: 100vw;
-    height: 30vh;
-    background-color: var(--clr-primary);
-  }
-
-  .content_hero_second_container {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 1.5rem;
-    --max-width: 1200px;
-    --padding: 1rem;
-    width: min(var(--max-width, 100% - var(--padding) * 2));
-    margin-inline: auto;
-  }
-
   .mobile_bg {
     visibility: hidden;
     display: none;
-  } 
+  }
 }
 
 @media (max-width: 61em) {
-
   .desktop_bg {
     visibility: hidden;
     display: none;
@@ -140,18 +96,6 @@
   }
   .content_hero_first p {
     font-size: 1.3rem;
-  }
-
-  .content_hero_second {
-    background-color: var(--clr-primary);
-  }
-
-  .content_hero_second_container {
-    display: flex;
-    flex-direction: column;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
   }
 
   .divider {

@@ -9,6 +9,7 @@ import heroDesktop from "public/background/n_hero_main.png";
 import heroMobile from "public/background/mobile_bg.webp";
 
 import CookieBanner from "../cookie-banner";
+import CarouselHero from "../../components/carousel/carousel-hero.js";
 
 function Hero() {
   return (
@@ -72,24 +73,8 @@ function Hero() {
       <div className={classes.end_spacer}></div>
 
       <div className={classes.divider}></div>
-      <div className={classes.content_hero_second}>
-        <div className={classes.content_hero_second_container}>
-          <h2>Vi är experter på smarta lås och hjälper till i hela Sverige</h2>
-          <p>
-            Kontakta oss för kostnadsfri konsultation, inget uppdrag är för
-            stort eller för litet.
-          </p>
-          <Link
-            href="mailto:alexander.falk@nylas.se"
-            style={{ display: "contents" }}
-          >
-            <span>alexander.falk@nylas.se</span>
-          </Link>
-          <Link href="tel:+46700126667" style={{ display: "contents" }}>
-            <span>070-012 66 67</span>
-          </Link>
-        </div>
-      </div>
+
+      
     </div>
   );
 }

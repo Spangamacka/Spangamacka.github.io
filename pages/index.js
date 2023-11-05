@@ -7,6 +7,9 @@ import Footer from "../components/footer/footer.js";
 import Head from "next/head";
 import Kontakt from "./kontakt";
 import classes from "./index.module.css";
+import CarouselHero from "../components/carousel/carousel-hero.js";
+import Link from "next/link";
+import CallCard from "../components/home-page/call-card.js";
 
 export default function HomePage() {
   return (
@@ -41,7 +44,9 @@ export default function HomePage() {
         />
        
       </Head>
-      <Hero />
+      {/* <Hero /> */}
+      <CarouselHero />
+      <CallCard />
       <FeaturedServices />
       <div className={classes.contact_holder}>
       <Kontakt />
@@ -51,5 +56,3 @@ export default function HomePage() {
   );
 }
 
-// 1) Hero Section - Företagspresentation
-//2) Våra tjänster

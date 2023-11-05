@@ -145,6 +145,21 @@
 .spacer {
     margin-top: 3rem;
 }
+
+.campaign {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--clr-primary);
+}
+
+.campaign p {
+    color: #FFCD3C;
+    font-weight: 900;
+    font-size: 1.65rem;
+}
 /* Desktop screen size */
 @media (min-width: 62em) {
 

@@ -1,0 +1,50 @@
+
+.btn_primary {
+    font-family: inherit;
+    align-items: center;
+    background-color: #FFC009;
+    border: 2px solid #FFC009;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-size: 1.3rem;
+    font-weight: 900;
+    height: 2.5rem;
+    justify-content: center;
+    
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 1.7rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btn-primary:focus {
+    color: #171e29;
+  }
+  
+  .btn_primary:hover {
+    background-color: #FFCD3C;
+    border-color: #FFCD3C;
+    fill: #FFCD3C;
+  }
+  
+  .btn_primary:active {
+    background-color: #FFCD3C;
+    border-color: #FFCD3C;
+    fill: #FFCD3C;
+  }
+  
+  @media (min-width: 768px) {
+    .btn_primary {
+      min-width: 170px;
+    }
+  }
