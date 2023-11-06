@@ -2,7 +2,6 @@ import classes from "./hero.module.css";
 import ActionButton from "../buttons/button-solid.js";
 import ActionButtonHollow from "../buttons/button-hollow.js";
 import LasjourInfobox from "../lasjourInfobox.js";
-import Image from "next/image";
 import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
 import heroDesktop from "public/background/n_hero_main.png";

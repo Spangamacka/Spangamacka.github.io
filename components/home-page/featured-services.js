@@ -2,9 +2,7 @@ import FeatureCard from "./feature-card.js";
 import classes from "./featured-services.module.css";
 import ActionButton from "../buttons/button-solid.js";
 import ActionButtonCard from "../buttons/button-card.js";
-import Image from "next/image";
 import Link from "next/link";
-
 import ExportedImage from "next-image-export-optimizer";
 import keyIcon from "public/icons/key_icon_m.svg";
 import openLock from "public/icons/openlock_icon.svg";

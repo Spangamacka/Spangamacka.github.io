@@ -1,6 +1,5 @@
 import classes from "./tjanster.module.css";
 import Link from "next/link";
-import Image from "next/image";
 import ExportedImage from "next-image-export-optimizer";
 import placeHolderMan from "public/placerholder_keyman.svg";
 import Head from "next/head";

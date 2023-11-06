@@ -1,6 +1,5 @@
 import classes from "./laskunskap.module.css";
 import Link from "next/link";
-import Image from "next/image";
 import ExportedImage from "next-image-export-optimizer";
 import Head from "next/head";
 

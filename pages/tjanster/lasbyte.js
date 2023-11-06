@@ -1,5 +1,4 @@
 import classes from "./lasbyte.module.css";
-import Image from "next/image";
 import ActionButton from "../../components/buttons/button-solid.js";
 import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";

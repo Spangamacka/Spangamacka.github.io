@@ -1,5 +1,4 @@
 import classes from "./smartlas.module.css";
-import Image from "next/image";
 import Link from "next/link";
 import ActionButton from "../../components/buttons/button-solid.js";
 import ExportedImage from "next-image-export-optimizer";

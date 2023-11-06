@@ -1,5 +1,4 @@
 import classes from "./lasoppning.module.css";
-import Image from "next/image";
 import LasjourInfobox from "../../components/lasjourInfobox.js";
 import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";

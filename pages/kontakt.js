@@ -1,5 +1,4 @@
 import classes from "./kontakt.module.css";
-import Image from "next/image";
 import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
 import kontaktLokal from "public/kontakt/kontakt_lokal.webp";
