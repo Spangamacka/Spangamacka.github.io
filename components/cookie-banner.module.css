@@ -78,6 +78,9 @@
   cursor: pointer;
 }
 
+.spacer {
+  padding-top: 1.5rem;
+}
 
 .logo_holder {
   position: relative;
@@ -132,15 +135,15 @@
     left: 0;
     right: 0;
     z-index: 50;
-    background: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.35);
   }
   .container {
     z-index: 3;
     position: relative;
     display: flex;
-    padding: 70px 25px 50px;
+    padding: 35px 25px 20px;
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 1.6rem;
   }
 
   .overlay_cookies {
@@ -155,15 +158,12 @@
     max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    top: 5%;
   }
 
   .text_center {
     background-color: rgb(255, 255, 255);
   }
+
+
 }
 
-@media (max-width: 425px) {
-  .container {
-  }
-}

@@ -48,6 +48,9 @@ function Footer() {
               <li>
                 <Link href="/om-oss">Om oss</Link>
               </li>
+              <li>
+                <Link href="/cookie-info">Cookies</Link>
+              </li>
             </ul>
             <ul className={classes.box}>
               <li className={classes.link_name}>
@@ -85,7 +88,7 @@ function Footer() {
                 <span className={classes.heading}>Nyttigt</span>
               </li>
               <li>
-                <a href="/kunskapsbank/bibliotek">Kunskapsbank</a>
+                <a href="/digitala-losningar/digitalt">Digitala lösningar</a>
               </li>
             </ul>
           </div>

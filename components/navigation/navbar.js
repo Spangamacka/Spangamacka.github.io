@@ -138,6 +138,7 @@ function Navbar() {
                 <li>
                   <Link href="/kunskap/laskunskap">Kunskap</Link>
                 </li>
+              
               </ul>
             </nav>
             <div

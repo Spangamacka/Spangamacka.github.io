@@ -1,5 +1,4 @@
 import classes from "./om-oss.module.css";
-import Image from "next/image";
 import ExportedImage from "next-image-export-optimizer";
 import placeholderPersonalNarrow from "public/placeholder_personal_narrow.svg";
 import Head from "next/head";
