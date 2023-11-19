@@ -45,41 +45,41 @@ function Navbar() {
               <ul>
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link href="/tjanster">Alla Tjänster </Link>
+                    <Link  rel="canonical" href="/tjanster">Alla Tjänster </Link>
                     <span className={classes.internal_link}>
-                      <Link href="/tjanster/lasbyte">Låsbyte</Link>
+                      <Link  rel="canonical" href="/tjanster/lasbyte">Låsbyte</Link>
                     </span>
                     <span className={classes.internal_link}>
-                      <Link href="/tjanster/lasoppning">Låsöppning</Link>
+                      <Link  rel="canonical" href="/tjanster/lasoppning">Låsöppning</Link>
                     </span>
                     <span className={classes.internal_link}>
-                      <Link href="/tjanster/smartlas">Smartlås</Link>
+                      <Link  rel="canonical" href="/tjanster/smartlas">Smartlås</Link>
                     </span>
                   </div>
                 </li>
               
                 <li>
                 <div className={classes.nav_mobile_linkhold}>
-                  <Link href="/digitala-losningar/digitalt">Digitala lösningar </Link>
+                  <Link  rel="canonical" href="/digitala-losningar/digitalt">Digitala lösningar </Link>
                     <span className={classes.internal_link}>
-                      <Link href="/digitala-losningar/digitalt">Digitalt</Link>
+                      <Link  rel="canonical" href="/digitala-losningar/digitalt">Digitalt</Link>
                     </span>
                   </div>
                 </li>
 
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link href="/kunskap/laskunskap">Låskunskap</Link>
+                    <Link rel="canonical" href="/kunskap/laskunskap">Låskunskap</Link>
                   </div>
                 </li>
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link href="/om-oss">Om oss</Link>
+                    <Link  rel="canonical" href="/om-oss">Om oss</Link>
                   </div>
                 </li>
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link href="/kontakt">Kontakt</Link>
+                    <Link  rel="canonical" href="/kontakt">Kontakt</Link>
                   </div>
                 </li>
               </ul>
@@ -122,7 +122,7 @@ function Navbar() {
             <nav className={classes.primary_navigation} id="primary-navigation">
               <ul aria_label="Primary" role="list" className={classes.nav_list}>
                 <li>
-                  <Link href="/tjanster">Tjänster</Link>
+                  <Link rel="canonical"  href="/tjanster">Tjänster</Link>
                 </li>
                 <li>
                   <Link href="/digitala-losningar/digitalt">
