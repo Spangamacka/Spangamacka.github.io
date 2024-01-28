@@ -10,6 +10,11 @@ function OmOssPage() {
         <title>
           Om Nylås - Låsservice i Stockholm för företag och privatperson
         </title>
+        <link
+          rel="canonical"
+          href="https://nylas.se/om-oss/"
+          key="canonical"
+        />
       </Head>
       <div className={classes.even_columns}>
         <div>

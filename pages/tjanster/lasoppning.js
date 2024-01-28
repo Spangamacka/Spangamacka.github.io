@@ -11,6 +11,11 @@ function LasoppningPage() {
     <div className={classes.container}>
       <Head>
         <title>Låsöppning I hela Stockholm - Låsservice</title>
+        <link
+          rel="canonical"
+          href="https://nylas.se/tjanster/lasoppning/"
+          key="canonical"
+        />
       </Head>
       <div className={classes.even_columns}>
         <div>

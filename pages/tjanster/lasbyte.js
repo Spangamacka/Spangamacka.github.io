@@ -12,6 +12,11 @@ function LasbytePage() {
     <div className={classes.container}>
       <Head>
         <title>Låsbyte I Stockholm - Mekaniska lås och smartlås</title>
+        <link
+          rel="canonical"
+          href="https://nylas.se/tjanster/lasbyte/"
+          key="canonical"
+        />
       </Head>
       <div className={classes.even_columns}>
         <div>

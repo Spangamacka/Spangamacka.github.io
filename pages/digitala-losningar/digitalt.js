@@ -11,6 +11,12 @@ function Digitalt() {
           Digitala, elektroniska lösningar för företag, bostadsrättsföreningar
           och privatpersoner
         </title>
+
+        <link
+          rel="canonical"
+          href="https://nylas.se/digitala-losningar/digitalt/"
+          key="canonical"
+        />
       </Head>
       <div className={classes.even_columns}>
         <div>

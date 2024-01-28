@@ -3,7 +3,7 @@
 import Link from "next/link";
 import classes from "./cookie-banner.module.css";
 import ExportedImage from "next-image-export-optimizer";
-import nylasLogo from "public/logo/NylåsLogo.svg";
+import nylasLogo from "public/logo/NylasLogo.svg";
 import { getLocalStorage, setLocalStorage } from "../helpers/storageHelper";
 import { useState, useEffect } from "react";
 

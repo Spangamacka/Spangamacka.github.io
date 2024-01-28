@@ -6,23 +6,13 @@ import sebastianpotrait from "public/kontakt/Seb_Kontakt.webp";
 import alexpotrait2 from "public/kontakt/Alex_kontakt_1.webp";
 import Head from "next/head";
 
-function KontaktPage() {
+function KontaktLightPage() {
   return (
     <div className={classes.container}>
-      <Head>
-        <title>
-          Kontakta Nylås - Låsöppning, låsbyte och smartlås i Stockholm för
-          privatpersoner och företag
-        </title>
-        <link
-          rel="canonical"
-          href="https://nylas.se/kontakt/"
-          key="canonical"
-        />
-      </Head>
+
       <div className={classes.even_columns}>
         <div>
-          <h1>Kontakta oss</h1>
+          <h1>Kontakta!! oss</h1>
 
           <div className={classes.contact}>
             <p className={classes.innerTextInfo}>
@@ -113,4 +103,4 @@ function KontaktPage() {
   );
 }
 
-export default KontaktPage;
+export default KontaktLightPage;

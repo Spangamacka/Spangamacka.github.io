@@ -15,16 +15,27 @@ import yaleClassic from "public/campaign/products/Yale_Classic_product.png";
 import test from "public/campaign/test.svg";
 import Link from "next/link";
 import CampaignButton from "../../components/buttons/campaign-button.js";
+import Head from "next/head";
 
 function Smartlaskampanjprodukter() {
   return (
     <div className={classes.container_large}>
+      <Head>
+      <title>
+          Kampanjpris på installation av smarta lås - Förlängt erbjudande till 1 Juni 2024.
+        </title>
+      <link
+          rel="canonical"
+          href="https://nylas.se/kampanjer/smartlas-kampanjprodukter/"
+          key="canonical"
+        />
+      </Head>
       <div className={classes.campaign_holder}>
-        <span className={classes.header}>Kampanjpris på smarta lås</span>
+        <span className={classes.header}>Förlängt Kampanjpris på smarta lås</span>
         <p>
           Nu erbjuder vi installation av smarta lås för endast{" "}
           <span className={classes.attention}>1750:-</span> efter rotavdrag samt
-          extra bra pris på smarta lås, Erbjudandet gäller året ut.
+          extra bra pris på smarta lås, Erbjudandet gäller till 1/6-2024.
         </p>
         <Link href="/tjanster/smartlas">
           <CampaignButton text="Läs mer om smarta lås här" />

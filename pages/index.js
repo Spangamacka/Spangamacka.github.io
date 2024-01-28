@@ -6,6 +6,7 @@ import SmartLockSection from "../components/home-page/smartlock-section.js";
 import Footer from "../components/footer/footer.js";
 import Head from "next/head";
 import Kontakt from "./kontakt";
+import KontaktLight from "./kontakt-L";
 import classes from "./index.module.css";
 import CarouselHero from "../components/carousel/carousel-hero.js";
 import Link from "next/link";
@@ -19,6 +20,7 @@ export default function HomePage() {
           Nylås: Låssmed i Stockholm med expertis inom smarta lås, låsbyten och
           låsöppning
         </title>
+        <link rel="canonical" href="https://nylas.se" key="canonical" />
         <meta
           name="description"
           content="Låssmed med expertis inom alla typer av lås. Nylås hjälper dig med expertis inom låsöppning, låsbyten och smartalås. Vi har även en låssjour vid akuta fall."
@@ -42,6 +44,7 @@ export default function HomePage() {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+
        
       </Head>
       {/* <Hero /> */}
@@ -49,10 +52,8 @@ export default function HomePage() {
       <CallCard />
       <FeaturedServices />
       <div className={classes.contact_holder}>
-      <Kontakt />
+        <KontaktLight />
       </div>
-    
     </Fragment>
   );
 }
-

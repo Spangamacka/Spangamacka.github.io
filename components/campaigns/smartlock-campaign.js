@@ -2,19 +2,17 @@ import classes from "./smartlock-campaign.module.css";
 import Link from "next/link";
 import CampaignButton from ".././buttons/campaign-button.js";
 
-
 function SmartlockCampaign() {
   return (
     <div className={classes.container_large}>
       <div className={classes.content_hero_first}>
-        <h2>KAMPANJPRIS PÅ SMARTA LÅS</h2>
+        <h2>FÖRLÄGNING AV SMARTA LÅS ERBJUDANDE!</h2>
         <p>
           Nu erbjuder vi installation av smarta lås för endast{" "}
           <span className={classes.price}>1750:-</span> efter rotavdrag,
-          Erbjudandet gäller året ut.
+          Erbjudandet gäller till 1/6-2024.
         </p>
         <span className={classes.price_att}>(Ordinarie pris 3000:-)</span>
-        
 
         <div className={classes.attention_sec}>
           <p>
@@ -24,12 +22,15 @@ function SmartlockCampaign() {
         </div>
 
         <div>
-        <Link href="/kampanjer/smartlas-kampanjprodukter" style={{ display: "contents" }}>
-          <CampaignButton text="Till Kampanjen" />
-        </Link>
+          <Link
+            href="/kampanjer/smartlas-kampanjprodukter"
+            style={{ display: "contents" }}
+          >
+            <CampaignButton text="Till Kampanjen" />
+          </Link>
         </div>
       </div>
-   
+
       <div className={classes.divider}></div>
     </div>
   );

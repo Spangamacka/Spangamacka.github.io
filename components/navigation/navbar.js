@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
 import ExportedImage from "next-image-export-optimizer";
-import nylasLogo from "public/logo/NylåsLogo.svg";
+import nylasLogo from "public/logo/NylasLogo.svg";
 import nylasLogoWhite from "public/logo/logo_white.svg";
 import hamburgerIcon from "public/icons/icon-hamburger.svg";
 
@@ -45,41 +45,54 @@ function Navbar() {
               <ul>
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link  rel="canonical" href="/tjanster">Alla Tjänster </Link>
+                    <Link rel="canonical" href="/tjanster">
+                      Alla Tjänster{" "}
+                    </Link>
                     <span className={classes.internal_link}>
-                      <Link  rel="canonical" href="/tjanster/lasbyte">Låsbyte</Link>
+                      <Link rel="canonical" href="/tjanster/lasbyte">
+                        Låsbyte
+                      </Link>
                     </span>
                     <span className={classes.internal_link}>
-                      <Link  rel="canonical" href="/tjanster/lasoppning">Låsöppning</Link>
+                      <Link rel="canonical" href="/tjanster/lasoppning">
+                        Låsöppning
+                      </Link>
                     </span>
                     <span className={classes.internal_link}>
-                      <Link  rel="canonical" href="/tjanster/smartlas">Smartlås</Link>
-                    </span>
-                  </div>
-                </li>
-              
-                <li>
-                <div className={classes.nav_mobile_linkhold}>
-                  <Link  rel="canonical" href="/digitala-losningar/digitalt">Digitala lösningar </Link>
-                    <span className={classes.internal_link}>
-                      <Link  rel="canonical" href="/digitala-losningar/digitalt">Digitalt</Link>
+                      <Link rel="canonical" href="/tjanster/smartlas">
+                        Smartlås
+                      </Link>
                     </span>
                   </div>
                 </li>
 
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link rel="canonical" href="/kunskap/laskunskap">Låskunskap</Link>
+                    <Link rel="canonical" href="/digitala-losningar/digitalt">
+                      Digitala lösningar{" "}
+                    </Link>
+                  </div>
+                </li>
+
+                <li>
+                  <div className={classes.nav_mobile_linkhold}>
+                    <Link rel="canonical" href="/kunskap/laskunskap">
+                      Låskunskap
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link  rel="canonical" href="/om-oss">Om oss</Link>
+                    <Link rel="canonical" href="/om-oss">
+                      Om oss
+                    </Link>
                   </div>
                 </li>
                 <li>
                   <div className={classes.nav_mobile_linkhold}>
-                    <Link  rel="canonical" href="/kontakt">Kontakt</Link>
+                    <Link rel="canonical" href="/kontakt">
+                      Kontakt
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -122,10 +135,12 @@ function Navbar() {
             <nav className={classes.primary_navigation} id="primary-navigation">
               <ul aria_label="Primary" role="list" className={classes.nav_list}>
                 <li>
-                  <Link rel="canonical"  href="/tjanster">Tjänster</Link>
+                  <Link rel="canonical" href="/tjanster">
+                    Tjänster
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/digitala-losningar/digitalt">
+                  <Link rel="canonical" href="/digitala-losningar/digitalt">
                     Digitala lösningar
                   </Link>
                 </li>
@@ -138,7 +153,6 @@ function Navbar() {
                 <li>
                   <Link href="/kunskap/laskunskap">Kunskap</Link>
                 </li>
-              
               </ul>
             </nav>
             <div

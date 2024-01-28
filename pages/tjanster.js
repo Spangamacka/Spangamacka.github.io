@@ -11,6 +11,12 @@ function TjansterPage() {
         <title>
           Låssmed som utför låsöppning, låsbyte och installation av smartlås
         </title>
+
+        <link
+          rel="canonical"
+          href="https://nylas.se/tjanster/"
+          key="canonical"
+        />
       </Head>
 
       <div className={classes.even_columns}>

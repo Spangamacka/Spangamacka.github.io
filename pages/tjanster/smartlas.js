@@ -16,6 +16,12 @@ function SmartlasPage() {
         <title>
           Smartlås, elektroniska lås i Stockholm - Smarta lösningar och låsbyten
         </title>
+
+        <link
+          rel="canonical"
+          href="https://nylas.se/tjanster/smartlas/"
+          key="canonical"
+        />
       </Head>
       <div className={classes.even_columns}>
         <div>
@@ -219,6 +225,7 @@ function SmartlasPage() {
             <ActionButton text="Kontakta oss" />
           </Link>
 
+          
           <div className={classes.campaign}>
             <p>Missa inte vår kampanj på smarta lås, som gäller året ut!</p>
           <Link href="/kampanjer/smartlas-kampanjprodukter">

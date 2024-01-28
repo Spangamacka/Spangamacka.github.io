@@ -9,6 +9,11 @@ function Laskunskap() {
     <div className={classes.container}>
       <Head>
       <title>Råd, tips och smarta lösningar om lås</title>
+      <link
+          rel="canonical"
+          href="https://nylas.se/kunskap/laskunskap/"
+          key="canonical"
+        />
     </Head>
       <div className={classes.even_columns}>
         <div>
