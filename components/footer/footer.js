@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import ExportedImage from "next-image-export-optimizer";
-import whiteLogoStockholm from 'public/logo/logo_white.svg';
+import whiteLogoStockholm from 'public/logo/spangamacka_logo.png';
 
 import { Red_Hat_Display } from "next/font/google";
 const redhatdisplay = Red_Hat_Display({
@@ -25,80 +25,23 @@ function Footer() {
                   placeholder="empty"
                     unoptimized={true}
                     src={whiteLogoStockholm}
-                    width={90}
-                    height={35}
+                    width={100}
+                    height={100}
                     quality={100}
-                    alt="NylåsLogo"
+                    alt="Pizza Spånga Mackan logotyp"
                   />
                 </Link>
               </span>
             </div>
           </div>
-          <div className={classes.link_boxes}>
-            <ul className={classes.box}>
-              <li className={classes.link_name}>
-                <span className={classes.heading}>Företag</span>
-              </li>
-              <li>
-              <Link href="mailto:info@nylas.se">info@nylas.se</Link>
-              </li>
-              <li>
-                <Link href="tel:+468306667">08-30 66 67</Link>
-              </li>
-              <li>
-                <Link href="/om-oss">Om oss</Link>
-              </li>
-              <li>
-                <Link href="/cookie-info">Cookies</Link>
-              </li>
-            </ul>
-            <ul className={classes.box}>
-              <li className={classes.link_name}>
-                <span className={classes.heading}>Tjänster</span>
-              </li>
-              <li>
-                <Link href="https://www.xn--stockholmlsjour-qlb.se/">Låsjour</Link>
-              </li>
-              <li>
-                <Link href="/tjanster/lasbyte">Låsbyte</Link>
-              </li>
-              <li>
-                <Link href="/tjanster/lasoppning">Låsöppning</Link>
-              </li>
-              <li>
-                <Link href="/tjanster/smartlas">Smarta lås</Link>
-              </li>
-            </ul>
-            <ul className={classes.box}>
-              <li className={classes.link_name}>
-                <span className={classes.heading}>Kunder</span>
-              </li>
-              <li>
-                <span className={classes.temp}>Bostadsrättsföreningar</span>
-              </li>
-              <li>
-                <span className={classes.temp}>Företag</span>
-              </li>
-              <li>
-                <span className={classes.temp}>Privatpersoner</span>
-              </li>
-            </ul>
-            <ul className={classes.box}>
-              <li className={classes.link_name}>
-                <span className={classes.heading}>Nyttigt</span>
-              </li>
-              <li>
-                <a href="/digitala-losningar/digitalt">Digitala lösningar</a>
-              </li>
-            </ul>
-          </div>
+
         </div>
         <div className={classes.bottom_details}>
           <div className={classes.bottom_text}>
             <span className={classes.copyright_text}>
-              Copyright © 2023 <Link href="/">Nylås.</Link>
+              Copyright © 2024 <Link href="/">Pizzeria Spånga Macka</Link>
             </span>
-            <span>Nylås AB, 559116-3802</span>
+            <span>Pizzeria Spånga Macka</span>
           </div>
         </div>
       </footer>

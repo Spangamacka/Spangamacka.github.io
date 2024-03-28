@@ -1,6 +1,6 @@
 .footer{
     
-    background: var(--clr-primary);
+    background: #EE1C25;
     width: 100%;
     position: relative;
     bottom: 0;
@@ -58,7 +58,7 @@
 
   footer .bottom_details{
     width: 100%;
-    background: var(--clr-primary);
+    background: #C80F17;
   }
   footer .bottom_details .bottom_text{
     max-width: 1250px;

@@ -4,23 +4,24 @@
 }
 
 .content_hero_first h1 {
-  max-width: 40rem;
+  max-width: 10em;
   line-height: 1.2;
   font-weight: 700;
   font-size: var(--size-800);
-  color: white;
+  color: #EE1C25;
   margin: 0;
+
 }
 
 .content_hero_first h3 {
   font-weight: 500;
   font-size: 1.3rem;
   margin: 0;
+  color: #212427;
 }
 
 .content_hero_first span {
-  color: white;
-  max-width: 10rem;
+  color: #212427;
   font-size: 1.5rem;
 }
 
@@ -30,8 +31,12 @@
   font-size: 1.55rem;
 }
 
+.telnum {
+  max-width: 10rem;
+}
+
 .divider {
-  border-bottom: 5px solid white;
+  border-bottom: 4px solid #fff6f8;
 }
 
 .spacer {
@@ -55,20 +60,26 @@
   z-index: -1;
 }
 
+.adress_holder {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
 @media (min-width: 61em) {
   .content_hero_first {
     box-sizing: content-box !important;
     display: flex;
-    height: 60vh;
     flex-direction: column;
-    padding-top: 9rem;
+    padding-top: 3rem;
     padding-left: 2rem;
     padding-right: 1.5rem;
     --max-width: 1200px;
     --padding: 1rem;
     width: min(var(--max-width, 100% - var(--padding) * 2));
     margin-inline: auto;
-    color: white;
   }
   .mobile_bg {
     visibility: hidden;
@@ -77,21 +88,19 @@
 }
 
 @media (max-width: 61em) {
-  .desktop_bg {
-    visibility: hidden;
-    display: none;
-  }
+
   .content_hero_first {
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
     padding-left: 2rem;
-    color: white;
+    color: #212427;
+    background-color: #ffffffab;
   }
 
   .content_hero_first h1 {
-    padding-top: 7rem;
+    padding-top: 3rem;
     font-size: 2.65rem;
   }
   .content_hero_first p {
