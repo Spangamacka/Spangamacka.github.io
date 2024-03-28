@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://Spangamacka.github.io
+
+# Sitemaps
+Sitemap: https://Spangamacka.github.io/sitemap.xml
