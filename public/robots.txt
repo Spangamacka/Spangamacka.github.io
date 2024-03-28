@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://nylas.se
+Host: https://Spangamacka.github.io
 
 # Sitemaps
-Sitemap: https://nylas.se/sitemap.xml
+Sitemap: https://Spangamacka.github.io/sitemap.xml

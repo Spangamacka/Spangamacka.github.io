@@ -32,7 +32,7 @@ function Hero() {
 
       <div className={classes.content_hero_first}>
         <h1>Pizzeria Spånga Macka - Sedan 1992.</h1>
-        <p>Vi bakar all vår mat med kärlek</p>
+        <p>Vi lager all vår mat med kärlek</p>
 
         <div>
         <Link
@@ -43,7 +43,7 @@ function Hero() {
           </Link>
         </div>
         <div className={classes.spacer}></div>
-        <div className={classes.spacer}></div>
+        <div className={classes.spacer_wide}></div>
         <h3>Telefon</h3>
         <Link href="tel:+468360883" style={{ display: "contents" }}>
           <span className={classes.telnum}>08-36 08 83</span>
@@ -53,7 +53,7 @@ function Hero() {
         <h3>Öppettider</h3>
         
         <span>Mån - Fre 10:00 - 21:00</span>
-        <span>Lör - Sön 10:00 - 21:00</span>
+        <span>Lör - Sön 11:00 - 21:00</span>
 
         <div className={classes.adress_holder}>
           <span>Spånga Kyrkväg 413</span>
