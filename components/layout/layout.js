@@ -14,7 +14,7 @@ function Layout(props) {
   return (
     <div className={redhatdisplay.className}>
       <div className={classes.container_wrapp_all}>
-        <Navbar />
+       {/*  <Navbar /> */}
         <main className={redhatdisplay.className}>{props.children}</main>
         <Footer />
       </div>

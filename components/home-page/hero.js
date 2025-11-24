@@ -5,6 +5,7 @@ import Link from "next/link";
 import ExportedImage from "next-image-export-optimizer";
 import heroDesktop from "public/background/pizzaInvert.webp";
 import heroMobile from "public/background/mobile_bg.webp";
+import spangaMackaLogo from "public/logo/spangamacka_logo.png";
 
 
 function Hero() {
@@ -16,7 +17,7 @@ function Hero() {
           <ExportedImage
             placeholder="empty"
             unoptimized={true}
-            alt="öppen-dörr-låsöppning-låsbyte"
+            alt="Pizza-med-tomat-basilika"
             src={heroDesktop}
             quality={100}
             fill
@@ -31,6 +32,17 @@ function Hero() {
       </div>
 
       <div className={classes.content_hero_first}>
+
+        <div className={classes.logo_container}>
+    <ExportedImage
+      placeholder="empty"
+      unoptimized={true}
+      src={spangaMackaLogo}
+      width={70}
+      height={70}
+      alt="Pizzeria Spånga Macka Logo"
+    />
+  </div>
         <h1>Pizzeria Spånga Macka - Sedan 1992.</h1>
         <p>Vi lager all vår mat med kärlek</p>
 
@@ -60,6 +72,7 @@ function Hero() {
           <span>163 56 Spånga</span>
         </div>
       </div>
+      
 
       <div className={classes.end_spacer}></div>
 
